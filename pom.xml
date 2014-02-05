@@ -109,7 +109,7 @@
                     </excludes>
                     <header>
                         <![CDATA[
-                            <a href="https://github.com/turbogwt/turbogwt-databind" target="_blank">Back to ko Home</a>
+                            <a href="https://github.com/growbit/turbogwt-databind" target="_blank">Back to ko Home</a>
                         ]]>
                     </header>
                     <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
