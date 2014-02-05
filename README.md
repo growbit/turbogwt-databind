@@ -185,4 +185,4 @@ TurboG will be available only in Maven Central.
 * [Inversion of Control (IOC)](http://martinfowler.com/bliki/InversionOfControl.html)
  
 # Extensions
-* [TurboG Databind GWT-Platform Extension](http://github.com/turbogwt/turbogwt-gwtp)
+* [TurboG Databind GWT-Platform Extension](http://github.com/growbit/turbogwt-gwtp)
