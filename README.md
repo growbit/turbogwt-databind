@@ -166,7 +166,7 @@ public class PersonViewImpl extends DatabindViewImpl implements PersonPresenter.
 }
 ```
 
-*DatabindViewImpl* is simply an extension of Composite with databind support.
+[*DatabindViewImpl*](https://github.com/growbit/turbogwt-databind/blob/master/src/main/java/org/turbogwt/mvp/databind/client/DatabindViewImpl.java) is simply an extension of Composite with databind support.
 
 Now, anytime the user changes the value of name textbox or birthday datebox, the new value is automatically sent to the Presenter passing through a validation. The view is notified of the validation. If the validation succeeds, the value is set into the model.
 
