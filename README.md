@@ -169,6 +169,8 @@ public class PersonViewImpl extends DatabindViewImpl implements PersonPresenter.
 
 Now, anytime the user changes the value of name textbox or birthday datebox, the new value is automatically sent to the Presenter passing through a validation. The view is notified of the validation. If the validation succeeds, the value is set into the model.
 
+See this [test case](https://github.com/growbit/turbogwt-databind/tree/master/src/test/java/org/turbogwt/mvp/databind/client/person) for a more complete example.
+
 ## Downloads
 Turbo GWT Databind is currently available at maven central.
 
