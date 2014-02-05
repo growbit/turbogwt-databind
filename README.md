@@ -170,14 +170,23 @@ public class PersonViewImpl extends DatabindViewImpl implements PersonPresenter.
 
 Now, anytime the user changes the value of name textbox or birthday datebox, the new value is automatically sent to the Presenter passing through a validation. The view is notified of the validation. If the validation succeeds, the value is set into the model.
 
-# Downloads
-TurboG will be available only in Maven Central.
-## Maven
-(Under construction)
+## Downloads
+Turbo GWT Databind is currently available at maven central.
 
-# Documentation
-## Javadocs
-(Under construction)
+### Maven
+```
+<dependency>
+    <groupId>org.turbogwt.mvp</groupId>
+    <artifactId>turbogwt-databind</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
+
+## License
+Turbo GWT Core is freely distributable under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+## Documentation
+* [Javadocs](http://growbit.github.io/turbogwt-core/javadoc/apidocs/index.html)
 
 ## Related articles
 * [Original MVP specification](http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp)
@@ -185,4 +194,4 @@ TurboG will be available only in Maven Central.
 * [Inversion of Control (IOC)](http://martinfowler.com/bliki/InversionOfControl.html)
  
 # Extensions
-* [TurboG Databind GWT-Platform Extension](http://github.com/growbit/turbogwt-gwtp)
+* [TurboG GWT-Platform Extension](http://github.com/growbit/turbogwt-gwtp)
