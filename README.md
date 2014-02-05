@@ -11,7 +11,7 @@ Turbo GWT (*TurboG*) MVP Databind
 * TurboG Databind is alwalys worried about Separation of Concerns and Single Responsibility concepts.
 * TurboG Databind is pluggable.
 * TurboG Databind is designed to be easily integrated into your existing project, adding the databind functionality with the least possible effort.
-* TurboG Databind is in love with IOC. <3
+* TurboG Databind is based on IOC.
 
 ## Features
 * Decoupled Model-View synchronization through Presenter
@@ -19,8 +19,7 @@ Turbo GWT (*TurboG*) MVP Databind
 * Formatting
 
 ## Why a new databind framework?
-* Editor Framework is verbose and complex.
-* Editor Framework has a overstepped and non-intuitive workflow.
+GWT already provides a default databind framework, called Editor Framework (EF). Although EF avoids writting direct calls between model and view, it requires declaring not-pleasant additional components, smelling your code. Furthermore, EF doesn't allow easy configuration of binding operation. It requires implementing framework extensions in order to add desired behavior. Finally, as almost all databind framewok, EF demands the View to know about the Model. Although this is acceptable for databinding purposes, it decreases your code's testability. Completely separating View from Model via Presenter, brings many benefits while there is only one possible flow between components.
 
 ## How do I use it?
 The databind is achieved by a 2-way binding. 
