@@ -1,0 +1,32 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./WidgetBinder.html" title="org.turbogwt.mvp.databind.client.WidgetBinder" alt="" coords="293,167,392,211"/>
+<area shape="rect" id="node1" href="./WidgetBinder.html" title="&lt;TABLE&gt;" alt="" coords="283,162,403,217"/>
+<area shape="rect" id="node8_1" href="./DatabindViewEngine.html" title="org.turbogwt.mvp.databind.client.DatabindViewEngine" alt="" coords="499,97,639,124"/>
+<area shape="rect" id="node8" href="./DatabindViewEngine.html" title="&lt;TABLE&gt;" alt="" coords="489,87,650,135"/>
+<area shape="rect" id="node9_2" href="./DatabindView.html" title="org.turbogwt.mvp.databind.client.DatabindView" alt="" coords="519,166,619,210"/>
+<area shape="rect" id="node9" href="./DatabindView.html" title="&lt;TABLE&gt;" alt="" coords="509,161,630,215"/>
+<area shape="rect" id="node2_3" href="./Strategy.html" title="org.turbogwt.mvp.databind.client.Strategy" alt="" coords="49,246,154,290"/>
+<area shape="rect" id="node2" href="./Strategy.html" title="&lt;TABLE&gt;" alt="" coords="38,241,165,295"/>
+<area shape="rect" id="node3_4" href="./PropertyBinder.html" title="org.turbogwt.mvp.databind.client.PropertyBinder" alt="" coords="278,325,407,369"/>
+<area shape="rect" id="node3" href="./PropertyBinder.html" title="&lt;TABLE&gt;" alt="" coords="267,319,418,374"/>
+<area shape="rect" id="node4_5" href="./PresenterEngine.html" title="org.turbogwt.mvp.databind.client.PresenterEngine" alt="" coords="499,333,639,360"/>
+<area shape="rect" id="node4" href="./PresenterEngine.html" title="&lt;TABLE&gt;" alt="" coords="489,323,650,371"/>
+<area shape="rect" id="node13_6" href="./Binding.html" title="org.turbogwt.mvp.databind.client.Binding" alt="" coords="526,403,613,447"/>
+<area shape="rect" id="node13" href="./Binding.html" title="&lt;TABLE&gt;" alt="" coords="515,398,623,453"/>
+<area shape="rect" id="node5_7" href="./HasDatabindValues.html" title="org.turbogwt.mvp.databind.client.HasDatabindValues" alt="" coords="275,10,410,54"/>
+<area shape="rect" id="node5" href="./HasDatabindValues.html" title="&lt;TABLE&gt;" alt="" coords="265,5,421,59"/>
+<area shape="rect" id="node6_8" href="./HasDatabindUiHandler.html" title="org.turbogwt.mvp.databind.client.HasDatabindUiHandler" alt="" coords="267,89,418,133"/>
+<area shape="rect" id="node6" href="./HasDatabindUiHandler.html" title="&lt;TABLE&gt;" alt="" coords="257,83,429,138"/>
+<area shape="rect" id="node7_9" href="./DatabindViewImpl.html" title="org.turbogwt.mvp.databind.client.DatabindViewImpl" alt="" coords="709,175,835,201"/>
+<area shape="rect" id="node7" href="./DatabindViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="699,164,845,212"/>
+<area shape="rect" id="node10_10" href="./DatabindValidationHandler.html" title="org.turbogwt.mvp.databind.client.DatabindValidationHandler" alt="" coords="256,246,429,290"/>
+<area shape="rect" id="node10" href="./DatabindValidationHandler.html" title="&lt;TABLE&gt;" alt="" coords="245,241,440,295"/>
+<area shape="rect" id="node11_11" href="./DatabindUiHandler.html" title="org.turbogwt.mvp.databind.client.DatabindUiHandler" alt="" coords="279,403,407,447"/>
+<area shape="rect" id="node11" href="./DatabindUiHandler.html" title="&lt;TABLE&gt;" alt="" coords="268,398,417,453"/>
+<area shape="rect" id="node12_12" href="./BindingImpl.html" title="org.turbogwt.mvp.databind.client.BindingImpl" alt="" coords="717,412,827,439"/>
+<area shape="rect" id="node12" href="./BindingImpl.html" title="&lt;TABLE&gt;" alt="" coords="706,401,838,449"/>
+<area shape="rect" id="node14_13" href="./BinderHandlerRegistration.html" title="org.turbogwt.mvp.databind.client.BinderHandlerRegistration" alt="" coords="16,179,187,205"/>
+<area shape="rect" id="node14" href="./BinderHandlerRegistration.html" title="&lt;TABLE&gt;" alt="" coords="5,168,197,216"/>
+<area shape="rect" id="node15_14" href="./Binder.html" title="org.turbogwt.mvp.databind.client.Binder" alt="" coords="59,325,143,369"/>
+<area shape="rect" id="node15" href="./Binder.html" title="&lt;TABLE&gt;" alt="" coords="49,319,154,374"/>
+</map>

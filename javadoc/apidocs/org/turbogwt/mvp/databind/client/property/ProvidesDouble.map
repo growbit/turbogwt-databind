@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ProvidesNumber.html" title="org.turbogwt.mvp.databind.client.property.ProvidesNumber" alt="" coords="17,10,154,54"/>
+<area shape="rect" id="node1" href="./ProvidesNumber.html" title="&lt;TABLE&gt;" alt="" coords="6,5,165,59"/>
+<area shape="rect" id="node2_1" href="./ProvidesDouble.html" title="org.turbogwt.mvp.databind.client.property.ProvidesDouble" alt="" coords="224,10,357,54"/>
+<area shape="rect" id="node2" href="./ProvidesDouble.html" title="&lt;TABLE&gt;" alt="" coords="213,5,368,59"/>
+<area shape="rect" id="node3_2" href="./DoublePropertyAccessor.html" title="org.turbogwt.mvp.databind.client.property.DoublePropertyAccessor" alt="" coords="427,10,615,54"/>
+<area shape="rect" id="node3" href="./DoublePropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="417,5,626,59"/>
+</map>
