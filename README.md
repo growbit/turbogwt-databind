@@ -172,6 +172,21 @@ Now, anytime the user changes the value of name textbox or birthday datebox, the
 
 See this [test case](https://github.com/growbit/turbogwt-databind/tree/master/src/test/java/org/turbogwt/mvp/databind/client/person) for a more complete example.
 
+## Basic flow
+### From View to Model
+1. User inputs value 
+2. View sends value to Presenter 
+3. Presenter unformats value (if exists) 
+4. Presenter validates value (if no there is no validator, then is always valid)
+5. Presenter notifies the View about the validation result 
+6. If valid, Presenter sends value to Model
+
+### From Model to View
+1. System updates Model 
+2. System calls refresh() on Presenter 
+3. Presenter formats value (if exists) 
+4. Presenter sends value to View
+
 ## Downloads
 Turbo GWT Databind is currently available at maven central.
 
