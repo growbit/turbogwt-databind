@@ -186,6 +186,20 @@ See this [test case](https://github.com/growbit/turbogwt-databind/tree/master/sr
 2. System calls refresh() on Presenter 
 3. Presenter formats value (if exists) 
 4. Presenter sends value to View
+ 
+## Documentation
+* [Javadocs](http://growbit.github.io/turbogwt-databind/javadoc/apidocs/index.html)
+
+## Related articles
+* [Original MVP specification](http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp)
+* [MVP - Passive View](http://martinfowler.com/eaaDev/PassiveScreen.html)
+* [Inversion of Control (IOC)](http://martinfowler.com/bliki/InversionOfControl.html)
+
+## Extensions
+* [TurboG GWT-Platform Extension](http://github.com/growbit/turbogwt-gwtp)
+
+## Community
+* [Turbo GWT Google Group](http://groups.google.com/d/forum/turbogwt) - Share ideas and ask for help.
 
 ## Downloads
 Turbo GWT Databind is currently available at maven central.
@@ -201,14 +215,3 @@ Turbo GWT Databind is currently available at maven central.
 
 ## License
 Turbo GWT Core is freely distributable under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
-
-## Documentation
-* [Javadocs](http://growbit.github.io/turbogwt-databind/javadoc/apidocs/index.html)
-
-## Related articles
-* [Original MVP specification](http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp)
-* [MVP - Passive View](http://martinfowler.com/eaaDev/PassiveScreen.html)
-* [Inversion of Control (IOC)](http://martinfowler.com/bliki/InversionOfControl.html)
- 
-# Extensions
-* [TurboG GWT-Platform Extension](http://github.com/growbit/turbogwt-gwtp)
