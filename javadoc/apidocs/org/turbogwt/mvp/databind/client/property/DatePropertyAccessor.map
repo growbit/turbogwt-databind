@@ -1,8 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./ProvidesDate.html" title="org.turbogwt.mvp.databind.client.property.ProvidesDate" alt="" coords="39,10,159,54"/>
-<area shape="rect" id="node1" href="./ProvidesDate.html" title="&lt;TABLE&gt;" alt="" coords="28,5,169,59"/>
-<area shape="rect" id="node3_1" href="./DatePropertyAccessor.html" title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" alt="" coords="251,50,426,94"/>
-<area shape="rect" id="node3" href="./DatePropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="241,45,437,99"/>
-<area shape="rect" id="node2_2" href="./PropertyAccessor.html" title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" alt="" coords="17,89,181,133"/>
-<area shape="rect" id="node2" href="./PropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="6,83,191,138"/>
+<area shape="rect" id="node1_0" href="./PropertyAccessor.html" title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" alt="" coords="17,10,181,54"/>
+<area shape="rect" id="node1" href="./PropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="6,5,191,59"/>
+<area shape="rect" id="node2_1" href="./DatePropertyAccessor.html" title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" alt="" coords="251,50,426,94"/>
+<area shape="rect" id="node2" href="./DatePropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="241,45,437,99"/>
+<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="28,83,169,138"/>
 </map>

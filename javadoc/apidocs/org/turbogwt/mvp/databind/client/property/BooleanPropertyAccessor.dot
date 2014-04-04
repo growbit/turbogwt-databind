@@ -10,30 +10,30 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
-	// org.turbogwt.mvp.databind.client.property.ProvidesBoolean<T>
-	c418 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesBoolean" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesBoolean.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesBoolean&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesBoolean.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c419 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c298 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T>
-	c426 [label=<<table title="org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BooleanPropertyAccessor.html">
+	c301 [label=<<table title="org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BooleanPropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> BooleanPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BooleanPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c419:p -> c426:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesBoolean<T>
-	c418:p -> c426:p [dir=back,arrowtail=empty,style=dashed];
+	c298:p -> c301:p [dir=back,arrowtail=empty,style=dashed];
+	//org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T> implements org.turbogwt.core.providers.client.ProvidesBoolean<T>
+	c310:p -> c301:p [dir=back,arrowtail=empty,style=dashed];
+	// org.turbogwt.core.providers.client.ProvidesBoolean<T>
+	c310 [label=<<table title="org.turbogwt.core.providers.client.ProvidesBoolean" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> ProvidesBoolean&lt;T&gt; </td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=10.0];
 }
 

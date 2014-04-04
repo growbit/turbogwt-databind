@@ -11,178 +11,47 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.property.TextPropertyAccessor<T>
-	c103 [label=<<table title="org.turbogwt.mvp.databind.client.property.TextPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TextPropertyAccessor.html">
+	c77 [label=<<table title="org.turbogwt.mvp.databind.client.property.TextPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TextPropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> TextPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./TextPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesValue" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesValue.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesValue&lt;T, F&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesValue.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesText<T>
-	c105 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesText" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesText.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesText&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesText.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesNumber<T>
-	c106 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesNumber" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesNumber.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesNumber&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesNumber.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesLong<T>
-	c107 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesLong" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesLong.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesLong&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesLong.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesInt<T>
-	c108 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesInt" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesInt.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesInt&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesInt.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesDouble<T>
-	c109 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesDouble" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesDouble.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesDouble&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesDouble.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesDecimal<T>
-	c110 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesDecimal" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesDecimal.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesDecimal&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesDecimal.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesDate<T>
-	c111 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesDate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesDate.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesDate&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesDate.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.ProvidesBoolean<T>
-	c112 [label=<<table title="org.turbogwt.mvp.databind.client.property.ProvidesBoolean" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProvidesBoolean.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ProvidesBoolean&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ProvidesBoolean.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c78 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor<T>
-	c114 [label=<<table title="org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NumberPropertyAccessor.html">
+	c79 [label=<<table title="org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NumberPropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> NumberPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NumberPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.LongPropertyAccessor<T>
-	c115 [label=<<table title="org.turbogwt.mvp.databind.client.property.LongPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LongPropertyAccessor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> LongPropertyAccessor&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./LongPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.IntPropertyAccessor<T>
-	c116 [label=<<table title="org.turbogwt.mvp.databind.client.property.IntPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IntPropertyAccessor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> IntPropertyAccessor&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./IntPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.DoublePropertyAccessor<T>
-	c117 [label=<<table title="org.turbogwt.mvp.databind.client.property.DoublePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoublePropertyAccessor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> DoublePropertyAccessor&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./DoublePropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.property.DecimalPropertyAccessor<T>
-	c118 [label=<<table title="org.turbogwt.mvp.databind.client.property.DecimalPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DecimalPropertyAccessor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> DecimalPropertyAccessor&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./DecimalPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T>
-	c119 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatePropertyAccessor.html">
+	c80 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatePropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatePropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatePropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T>
-	c120 [label=<<table title="org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanPropertyAccessor.html">
+	c81 [label=<<table title="org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanPropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> BooleanPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BooleanPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.TextPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c103:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.TextPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesText<T>
-	c105:p -> c103:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesText<T> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c105:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesNumber<T> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c106:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesLong<T> implements org.turbogwt.mvp.databind.client.property.ProvidesNumber<T>
-	c106:p -> c107:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesInt<T> implements org.turbogwt.mvp.databind.client.property.ProvidesNumber<T>
-	c106:p -> c108:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesDouble<T> implements org.turbogwt.mvp.databind.client.property.ProvidesNumber<T>
-	c106:p -> c109:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesDecimal<T> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c110:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesDate<T> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c111:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.ProvidesBoolean<T> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c112:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F> implements org.turbogwt.mvp.databind.client.property.ProvidesValue<T, F>
-	c104:p -> c113:p [dir=back,arrowtail=empty,style=dashed];
+	c78:p -> c77:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c114:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.LongPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c115:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.LongPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesLong<T>
-	c107:p -> c115:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.IntPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c116:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.IntPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesInt<T>
-	c108:p -> c116:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.DoublePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c117:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.DoublePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesDouble<T>
-	c109:p -> c117:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.DecimalPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c118:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.DecimalPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesDecimal<T>
-	c110:p -> c118:p [dir=back,arrowtail=empty,style=dashed];
+	c78:p -> c79:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c119:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesDate<T>
-	c111:p -> c119:p [dir=back,arrowtail=empty,style=dashed];
+	c78:p -> c80:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c113:p -> c120:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.ProvidesBoolean<T>
-	c112:p -> c120:p [dir=back,arrowtail=empty,style=dashed];
+	c78:p -> c81:p [dir=back,arrowtail=empty,style=dashed];
 }
 
