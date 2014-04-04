@@ -15,10 +15,12 @@
  */
 package org.turbogwt.mvp.databind.client.property;
 
+import org.turbogwt.core.providers.client.ProvidesNumber;
+
 /**
  * @param <T> Model type
  *
  * @author Danilo Reinert
  */
-public interface NumberPropertyAccessor<T> extends PropertyAccessor<T, Number> {
+public interface NumberPropertyAccessor<T> extends PropertyAccessor<T, Number>, ProvidesNumber<T> {
 }

@@ -17,6 +17,8 @@ package org.turbogwt.mvp.databind.client.property;
 
 import javax.annotation.Nullable;
 
+import org.turbogwt.core.providers.client.ProvidesValue;
+
 /**
  * This interface is meant to provide access to some property of an object. Simply, it should call the getter and setter
  * of a specific property.

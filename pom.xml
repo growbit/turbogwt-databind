@@ -162,6 +162,14 @@
     </build>
 
     <dependencies>
+        <!-- Turbo GWT dependencies -->
+        <dependency>
+            <groupId>org.turbogwt.core</groupId>
+            <artifactId>turbogwt-core</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Google Web Toolkit dependencies -->
         <dependency>
             <groupId>com.google.gwt</groupId>
