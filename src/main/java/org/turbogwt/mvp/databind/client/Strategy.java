@@ -16,6 +16,8 @@
 package org.turbogwt.mvp.databind.client;
 
 /**
+ * Represents the way values are updated on the databinding.
+ *
  * @author Danilo Reinert
  */
 public enum Strategy {
