@@ -15,14 +15,13 @@
  */
 package org.turbogwt.mvp.databind.client;
 
+import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 
 import java.util.Date;
 
 import javax.annotation.Nullable;
-
-import junit.framework.TestCase;
 
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.mock.DatabindViewMock;
@@ -35,7 +34,12 @@ import org.turbogwt.mvp.databind.client.property.TextPropertyAccessor;
 /**
  * @author Danilo Reinert
  */
-public class BindingTest extends TestCase {
+public class BindingTest extends GWTTestCase {
+
+    @Override
+    public String getModuleName() {
+        return "org.turbogwt.mvp.databind.DatabindTest";
+    }
 
     static class Model {
         Date dateValue;

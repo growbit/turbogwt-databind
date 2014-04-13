@@ -33,12 +33,6 @@ public class DatabindTestSuite {
         suite.addTestSuite(RequiredValidatorTest.class);
         suite.addTestSuite(EmailValidatorTest.class);
 
-        /* View */
-        suite.addTestSuite(DatabindViewEngineTest.class);
-
-        /* Presenter */
-        suite.addTestSuite(BindingTest.class);
-
         return suite;
     }
 }

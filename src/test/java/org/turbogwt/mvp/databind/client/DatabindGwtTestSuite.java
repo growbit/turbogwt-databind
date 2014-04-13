@@ -30,6 +30,13 @@ public class DatabindGwtTestSuite {
     public static Test suite() {
         GWTTestSuite suite = new GWTTestSuite("Databind GWT Test Suite");
 
+        /* View */
+        suite.addTestSuite(DatabindViewEngineTest.class);
+
+        /* Presenter */
+        suite.addTestSuite(BindingTest.class);
+
+        /* Use Case */
         suite.addTestSuite(PersonGwtTestCase.class);
 
         return suite;
