@@ -126,15 +126,25 @@
                 <artifactId>gwt-maven-plugin</artifactId>
                 <version>${gwt-maven-plugin.version}</version>
                 <configuration>
-                    <extraJvmArgs>-Xss1024k -Xmx512M</extraJvmArgs>
+                    <extraJvmArgs>-Xss16M -Xms512M -Xmx1024M</extraJvmArgs>
                     <includes>**/*GwtTestSuite.java</includes>
+
                     <mode>htmlunit</mode>
                     <testTimeOut>180</testTimeOut>
                 </configuration>
                 <executions>
                     <execution>
+                        <id>1</id>
+                        <phase>test</phase>
                         <goals>
                             <goal>test</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>2</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
                         </goals>
                     </execution>
                 </executions>
