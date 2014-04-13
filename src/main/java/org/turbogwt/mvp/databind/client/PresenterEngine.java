@@ -17,10 +17,11 @@ package org.turbogwt.mvp.databind.client;
 
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
+import org.turbogwt.core.js.client.Overlays;
+import org.turbogwt.core.js.collections.client.JsArrayIterator;
+import org.turbogwt.core.js.collections.client.JsMap;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
 import org.turbogwt.mvp.databind.client.validation.Validation;
@@ -65,7 +66,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     }
 
     // TODO: substitute map by a simple javascript object to increase performance
-    private final Map<String, PropertyBinding> properties = new HashMap<String, PropertyBinding>();
+    private final JsMap<PropertyBinding> properties = JsMap.create();
 
     public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
         return bind(true, id, propertyAccessor);
@@ -107,14 +108,14 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     @Override
     public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
                                         Validator<T, F> validator, Formatter<F, ?> formatter) {
-        if (properties.containsKey(id)) {
+        if (properties.contains(id)) {
             PropertyBinding propertyBinding = properties.get(id);
             propertyBinding.propertyAccessor = propertyAccessor;
             propertyBinding.validator = validator;
             propertyBinding.formatter = formatter;
         } else {
             PropertyBinding propertyBinding = new PropertyBinding(autoRefresh, propertyAccessor, validator, formatter);
-            properties.put(id, propertyBinding);
+            properties.set(id, propertyBinding);
         }
         return BinderHandlerRegistration.of(this, id);
     }
@@ -185,7 +186,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     }
 
     public boolean hasProperty(String id) {
-        return properties.containsKey(id);
+        return properties.contains(id);
     }
 
     /**
@@ -195,12 +196,14 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
      */
     @Override
     public Iterator<String> iterator() {
-        return properties.keySet().iterator();
+        return new JsArrayIterator<>(Overlays.getOwnPropertyNames(properties));
     }
 
     @Override
     public boolean unbind(String id) {
-        return properties.remove(id) != null;
+        boolean removed = properties.contains(id);
+        properties.remove(id);
+        return removed;
     }
 
     public Object unformat(String id, Object formattedValue) {

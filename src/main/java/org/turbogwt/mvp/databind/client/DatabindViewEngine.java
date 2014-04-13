@@ -21,14 +21,15 @@ import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.turbogwt.core.js.collections.client.JsMap;
 
 /**
  * This class should be used by any {@link DatabindView} as a delegatee.
  *
  * You can even create an abstract view implementing {@link DatabindView} and delegating the properly methods to this
- * engine. Then all your views supporting databind could extend from this one.
+ * engine. Then all your views supporting databinding could extend from this one.
+ *
+ * @see DatabindViewImpl
  *
  * @author Danilo Reinert
  */
@@ -52,8 +53,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
         }
     }
 
-    // TODO: substitute map by a simple javascript object to increase performance
-    private final Map<String, WidgetBinding> bindings = new HashMap<String, WidgetBinding>();
+    private final JsMap<WidgetBinding> bindings = JsMap.create();
     private DatabindUiHandler uiHandler;
 
     @Override
@@ -94,7 +94,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
             handlerRegistration = addChangeHandlerToBoundWidget(id, widget);
         }
 
-        if (bindings.containsKey(id)) {
+        if (bindings.contains(id)) {
             // If id were already bound, then update the binding
             WidgetBinding widgetBinding = bindings.get(id);
             if (widgetBinding.widgetHandlerRegistration != null) {
@@ -105,7 +105,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
             widgetBinding.widgetHandlerRegistration = handlerRegistration;
         } else {
             WidgetBinding widgetBinding = new WidgetBinding(widget, handlerRegistration);
-            bindings.put(id, widgetBinding);
+            bindings.set(id, widgetBinding);
         }
         return BinderHandlerRegistration.of(this, id);
     }
@@ -114,12 +114,12 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
     public <F> HandlerRegistration bind(String id, TakesValue<F> widget) {
 //        assert (widget instanceof IsWidget) : "TakesValue parameter must be of type IsWidget";
 
-        if (bindings.containsKey(id)) {
+        if (bindings.contains(id)) {
             WidgetBinding widgetBinding = bindings.get(id);
             widgetBinding.widget = widget;
         } else {
             WidgetBinding widgetBinding = new WidgetBinding(widget);
-            bindings.put(id, widgetBinding);
+            bindings.set(id, widgetBinding);
         }
         return BinderHandlerRegistration.of(this, id);
     }
@@ -138,7 +138,8 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
 
     @Override
     public boolean unbind(String id) {
-        final WidgetBinding widgetBinding = bindings.remove(id);
+        final WidgetBinding widgetBinding = bindings.get(id);
+        bindings.remove(id);
         if (widgetBinding != null) {
             if (widgetBinding.widgetHandlerRegistration != null) {
                 widgetBinding.widgetHandlerRegistration.removeHandler();
