@@ -196,7 +196,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
      */
     @Override
     public Iterator<String> iterator() {
-        return new JsArrayIterator<>(Overlays.getOwnPropertyNames(properties));
+        return new JsArrayIterator<>(Overlays.getPropertyNames(properties));
     }
 
     @Override
