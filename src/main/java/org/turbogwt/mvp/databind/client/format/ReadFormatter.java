@@ -36,5 +36,5 @@ public interface ReadFormatter<MODEL, VIEW> {
      * @return formatted value
      */
     @Nullable
-    VIEW format(@Nullable MODEL rawValue);
+    VIEW format(@Nullable MODEL rawValue) throws UnableToFormatException;
 }
