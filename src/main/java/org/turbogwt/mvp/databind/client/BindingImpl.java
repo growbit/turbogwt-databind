@@ -20,6 +20,7 @@ import com.google.web.bindery.event.shared.HandlerRegistration;
 import java.util.Iterator;
 
 import org.turbogwt.mvp.databind.client.format.Formatter;
+import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
 import org.turbogwt.mvp.databind.client.validation.Validation;
 import org.turbogwt.mvp.databind.client.validation.Validator;
@@ -328,7 +329,7 @@ public class BindingImpl<T> implements Binding<T> {
      * @param formattedValue value from view
      * @return {@code true} if the value is different from current, {@code false} otherwise
      */
-    private boolean isValueDifferent(String id, Object formattedValue) {
+    private boolean isValueDifferent(String id, Object formattedValue) throws UnableToFormatException {
         if (hasProperty(id)) {
             final Object value = engine.getRawValue(id, model);
             Object unformattedValue = engine.unformat(id, formattedValue);

@@ -33,6 +33,8 @@ public interface ReadFormatter<MODEL, VIEW> {
      *
      * @param rawValue raw value held by the model
      *
+     * @throws org.turbogwt.mvp.databind.client.format.UnableToFormatException if could not perform formatting.
+     *
      * @return formatted value
      */
     @Nullable

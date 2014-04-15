@@ -23,6 +23,7 @@ import org.turbogwt.core.js.client.Overlays;
 import org.turbogwt.core.js.collections.client.JsArrayIterator;
 import org.turbogwt.core.js.collections.client.JsMap;
 import org.turbogwt.mvp.databind.client.format.Formatter;
+import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
 import org.turbogwt.mvp.databind.client.validation.Validation;
 import org.turbogwt.mvp.databind.client.validation.Validator;
@@ -131,7 +132,15 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     public Validation isValueValid(String id, T data, Object value) {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null && propertyBinding.validator != null) {
-            return propertyBinding.validator.validate(data, unformat(id, value));
+            Object rawValue;
+            try {
+                // Try to unformat the value.
+                rawValue = unformat(id, value);
+            } catch (UnableToFormatException e) {
+                // Return invalid with the validation message inside the exception.
+                return Validation.invalid(e.getValidationMessage());
+            }
+            return propertyBinding.validator.validate(data, rawValue);
         }
         return Validation.valid();
     }
@@ -206,7 +215,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         return removed;
     }
 
-    public Object unformat(String id, Object formattedValue) {
+    public Object unformat(String id, Object formattedValue) throws UnableToFormatException {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null && propertyBinding.formatter != null) {
             return propertyBinding.formatter.unformat(formattedValue);

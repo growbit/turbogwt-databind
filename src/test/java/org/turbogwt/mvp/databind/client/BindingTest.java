@@ -24,6 +24,7 @@ import java.util.Date;
 import javax.annotation.Nullable;
 
 import org.turbogwt.mvp.databind.client.format.Formatter;
+import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.mock.DatabindViewMock;
 import org.turbogwt.mvp.databind.client.mock.HasValueMock;
 import org.turbogwt.mvp.databind.client.mock.TakesValueMock;
@@ -229,48 +230,49 @@ public class BindingTest extends GWTTestCase {
                 };
 
         // Declare formatters
-        final Formatter<String, Double> stringPropertyFormatter = new
-                Formatter<String, Double>() {
-                    @Nullable
-                    @Override
-                    public Double format(@Nullable String rawValue) {
-                        return rawValue != null ? Double.valueOf(rawValue) : null;
-                    }
+        final Formatter<String, Double> stringPropertyFormatter = new Formatter<String, Double>() {
+            @Nullable
+            @Override
+            public Double format(@Nullable String rawValue) throws UnableToFormatException {
+                return rawValue != null ? Double.valueOf(rawValue) : null;
+            }
 
-                    @Nullable
-                    @Override
-                    public String unformat(@Nullable Double formattedValue) {
-                        return formattedValue != null ? String.valueOf(formattedValue) : null;
-                    }
-                };
-        final Formatter<Number, String> intPropertyFormatter = new
-                Formatter<Number, String>() {
-                    @Nullable
-                    @Override
-                    public String format(@Nullable Number rawValue) {
-                        return rawValue != null ? String.valueOf(rawValue) : null;
-                    }
+            @Nullable
+            @Override
+            public String unformat(@Nullable Double formattedValue) throws UnableToFormatException {
+                return formattedValue != null ? String.valueOf(formattedValue) : null;
+            }
+        };
+        final Formatter<Number, String> intPropertyFormatter = new Formatter<Number, String>() {
+            @Nullable
+            @Override
+            public String format(@Nullable Number rawValue) throws UnableToFormatException {
+                return rawValue != null ? String.valueOf(rawValue) : null;
+            }
 
-                    @Nullable
-                    @Override
-                    public Number unformat(@Nullable String formattedValue) {
-                        return formattedValue != null ? Integer.valueOf(formattedValue) : null;
-                    }
-                };
-        final Formatter<Date, Long> datePropertyFormatter = new
-                Formatter<Date, Long>() {
-                    @Nullable
-                    @Override
-                    public Long format(@Nullable Date rawValue) {
-                        return rawValue != null ? rawValue.getTime() : null;
-                    }
+            @Nullable
+            @Override
+            public Number unformat(@Nullable String formattedValue) throws UnableToFormatException {
+                try {
+                    return formattedValue != null ? Integer.valueOf(formattedValue) : null;
+                } catch (Exception e) {
+                    throw new UnableToFormatException("Value should be a number.");
+                }
+            }
+        };
+        final Formatter<Date, Long> datePropertyFormatter = new Formatter<Date, Long>() {
+            @Nullable
+            @Override
+            public Long format(@Nullable Date rawValue) throws UnableToFormatException {
+                return rawValue != null ? rawValue.getTime() : null;
+            }
 
-                    @Nullable
-                    @Override
-                    public Date unformat(@Nullable Long formattedValue) {
-                        return formattedValue != null ? new Date(formattedValue) : null;
-                    }
-                };
+            @Nullable
+            @Override
+            public Date unformat(@Nullable Long formattedValue) throws UnableToFormatException {
+                return formattedValue != null ? new Date(formattedValue) : null;
+            }
+        };
 
         // Bind properties
         binding.bind(stringProperty, stringPropertyAccessor, stringPropertyFormatter);
@@ -349,5 +351,11 @@ public class BindingTest extends GWTTestCase {
 
         assertEquals(expectedDatePropertyValueAtView, longWidget.getValue());
         assertEquals(expectedDatePropertyValueAtView, mockView.getValue(dateProperty));
+
+        // Try an invalid value to int property at View
+        final String previousIntPropertyValueAtView = expectedIntPropertyValueAtView;
+        mockView.setValue(intProperty, "shouldBeNumber");
+        assertEquals("shouldBeNumber", stringWidget.getValue());
+        assertEquals(Integer.valueOf(previousIntPropertyValueAtView), model.intValue);
     }
 }
