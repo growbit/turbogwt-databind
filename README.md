@@ -214,4 +214,4 @@ Turbo GWT Databind is currently available at maven central.
 ```
 
 ## License
-Turbo GWT Core is freely distributable under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
+Turbo GWT Databind is freely distributable under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
