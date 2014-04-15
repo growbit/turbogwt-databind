@@ -176,7 +176,7 @@ See this [test case](https://github.com/growbit/turbogwt-databind/tree/master/sr
 ### From View to Model
 1. User inputs value 
 2. View sends value to Presenter 
-3. Presenter unformats value (if coudl not unformat, throw UnableToFormatException) 
+3. Presenter unformats value (if could not unformat, throw UnableToFormatException) 
 4. Presenter validates value (if there is no validator, then is always valid)
 5. Presenter notifies the View about the validation result 
 6. If valid, Presenter sends value to Model
