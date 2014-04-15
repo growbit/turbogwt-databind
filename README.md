@@ -211,6 +211,13 @@ Turbo GWT Databind is currently available at maven central.
     <artifactId>turbogwt-databind</artifactId>
     <version>0.1.0</version>
 </dependency>
+
+<!-- Required dependency -->
+<dependency>
+    <groupId>org.turbogwt.core</groupId>
+    <artifactId>turbogwt-core</artifactId>
+    <version>0.1.0</version>
+</dependency>
 ```
 
 ## License
