@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./ReadFormatter.html" title="org.turbogwt.mvp.databind.client.format.ReadFormatter" alt="" coords="16,10,227,54"/>
-<area shape="rect" id="node1" href="./ReadFormatter.html" title="&lt;TABLE&gt;" alt="" coords="5,5,237,59"/>
-<area shape="rect" id="node2_1" href="./Formatter.html" title="org.turbogwt.mvp.databind.client.format.Formatter" alt="" coords="296,10,477,54"/>
-<area shape="rect" id="node2" href="./Formatter.html" title="&lt;TABLE&gt;" alt="" coords="285,5,488,59"/>
+<area shape="rect" id="node1_0" href="./UnableToFormatException.html" title="org.turbogwt.mvp.databind.client.format.UnableToFormatException" alt="" coords="35,95,208,121"/>
+<area shape="rect" id="node1" href="./UnableToFormatException.html" title="&lt;TABLE&gt;" alt="" coords="24,84,219,132"/>
+<area shape="rect" id="node2_1" href="./ReadFormatter.html" title="org.turbogwt.mvp.databind.client.format.ReadFormatter" alt="" coords="16,10,227,54"/>
+<area shape="rect" id="node2" href="./ReadFormatter.html" title="&lt;TABLE&gt;" alt="" coords="5,5,237,59"/>
+<area shape="rect" id="node3_2" href="./Formatter.html" title="org.turbogwt.mvp.databind.client.format.Formatter" alt="" coords="296,10,477,54"/>
+<area shape="rect" id="node3" href="./Formatter.html" title="&lt;TABLE&gt;" alt="" coords="285,5,488,59"/>
 </map>

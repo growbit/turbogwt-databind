@@ -11,53 +11,53 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c221 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyBinder.html">
+	c229 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyBinder&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyBinder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.DatabindUiHandler
-	c229 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindUiHandler.html">
+	c237 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindUiHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindUiHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindUiHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.BindingImpl<T>
-	c230 [label=<<table title="org.turbogwt.mvp.databind.client.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BindingImpl.html">
+	c238 [label=<<table title="org.turbogwt.mvp.databind.client.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BindingImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BindingImpl&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BindingImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binding<T>
-	c231 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Binding.html">
+	c239 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Binding.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binder
-	c233 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
+	c241 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.PropertyBinder<T> implements org.turbogwt.mvp.databind.client.Binder
-	c233:p -> c221:p [dir=back,arrowtail=empty,style=dashed];
+	c241:p -> c229:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.BindingImpl<T> implements org.turbogwt.mvp.databind.client.Binding<T>
-	c231:p -> c230:p [dir=back,arrowtail=empty,style=dashed];
+	c239:p -> c238:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c221:p -> c231:p [dir=back,arrowtail=empty,style=dashed];
+	c229:p -> c239:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.DatabindUiHandler
-	c229:p -> c231:p [dir=back,arrowtail=empty,style=dashed];
+	c237:p -> c239:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements java.lang.Iterable<T>
-	c249:p -> c231:p [dir=back,arrowtail=empty,style=dashed];
+	c258:p -> c239:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.Binder
-	c233:p -> c231:p [dir=back,arrowtail=empty,style=dashed];
+	c241:p -> c239:p [dir=back,arrowtail=empty,style=dashed];
 	// java.lang.Iterable<T>
-	c249 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/7/docs/api/java/lang/Iterable.html">
+	c258 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/7/docs/api/java/lang/Iterable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Iterable&lt;T&gt; </td></tr>

@@ -11,20 +11,20 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.format.ReadFormatter<MODEL, VIEW>
-	c753 [label=<<table title="org.turbogwt.mvp.databind.client.format.ReadFormatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReadFormatter.html">
+	c779 [label=<<table title="org.turbogwt.mvp.databind.client.format.ReadFormatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReadFormatter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReadFormatter&lt;MODEL, VIEW&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReadFormatter.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.format.Formatter<MODEL, VIEW>
-	c754 [label=<<table title="org.turbogwt.mvp.databind.client.format.Formatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Formatter.html">
+	c780 [label=<<table title="org.turbogwt.mvp.databind.client.format.Formatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Formatter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Formatter&lt;MODEL, VIEW&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Formatter.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.format.Formatter<MODEL, VIEW> implements org.turbogwt.mvp.databind.client.format.ReadFormatter<MODEL, VIEW>
-	c753:p -> c754:p [dir=back,arrowtail=empty,style=dashed];
+	c779:p -> c780:p [dir=back,arrowtail=empty,style=dashed];
 }
 

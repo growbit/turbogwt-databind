@@ -11,40 +11,40 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.WidgetBinder
-	c122 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WidgetBinder.html">
+	c126 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WidgetBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WidgetBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WidgetBinder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c126 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyBinder.html">
+	c130 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyBinder&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyBinder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binding<T>
-	c148 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
+	c152 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binder
-	c152 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Binder.html">
+	c156 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Binder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.WidgetBinder implements org.turbogwt.mvp.databind.client.Binder
-	c152:p -> c122:p [dir=back,arrowtail=empty,style=dashed];
+	c156:p -> c126:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.PropertyBinder<T> implements org.turbogwt.mvp.databind.client.Binder
-	c152:p -> c126:p [dir=back,arrowtail=empty,style=dashed];
+	c156:p -> c130:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c126:p -> c148:p [dir=back,arrowtail=empty,style=dashed];
+	c130:p -> c152:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.Binder
-	c152:p -> c148:p [dir=back,arrowtail=empty,style=dashed];
+	c156:p -> c152:p [dir=back,arrowtail=empty,style=dashed];
 }
 
