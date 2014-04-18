@@ -21,6 +21,7 @@ import java.util.Iterator;
 
 import org.turbogwt.core.js.client.Overlays;
 import org.turbogwt.core.js.collections.client.JsArrayIterator;
+import org.turbogwt.core.js.collections.client.JsArrays;
 import org.turbogwt.core.js.collections.client.JsMap;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
@@ -205,7 +206,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
      */
     @Override
     public Iterator<String> iterator() {
-        return new JsArrayIterator<>(Overlays.getPropertyNames(properties));
+        return new JsArrayIterator<>(JsArrays.toArray(Overlays.getPropertyNames(properties)));
     }
 
     @Override
