@@ -5,8 +5,8 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
@@ -16,16 +16,16 @@ digraph G {
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> TextPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./TextPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./TextPropertyAccessor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c875 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c877 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./PropertyAccessor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.TextPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c875:p -> c874:p [dir=back,arrowtail=empty,style=dashed];
+	c877:p -> c874:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.TextPropertyAccessor<T> implements org.turbogwt.core.providers.client.ProvidesText<T>
 	c887:p -> c874:p [dir=back,arrowtail=empty,style=dashed];
 	// org.turbogwt.core.providers.client.ProvidesText<T>
@@ -34,6 +34,6 @@ digraph G {
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProvidesText&lt;T&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

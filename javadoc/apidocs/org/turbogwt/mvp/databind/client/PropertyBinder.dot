@@ -5,45 +5,45 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
-	// org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c734 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PropertyBinder.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> PropertyBinder&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./PropertyBinder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.PresenterEngine<T>
-	c735 [label=<<table title="org.turbogwt.mvp.databind.client.PresenterEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PresenterEngine.html">
+	c740 [label=<<table title="org.turbogwt.mvp.databind.client.PresenterEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PresenterEngine.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PresenterEngine&lt;T&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./PresenterEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.Binding<T>
-	c744 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./PresenterEngine.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binder
-	c746 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
+	c741 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binder </td></tr>
 		</table></td></tr>
-		</table>>, URL="./Binder.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	//org.turbogwt.mvp.databind.client.PropertyBinder<T> implements org.turbogwt.mvp.databind.client.Binder
-	c746:p -> c734:p [dir=back,arrowtail=empty,style=dashed];
+		</table>>, URL="./Binder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.PropertyBinder<T>
+	c742 [label=<<table title="org.turbogwt.mvp.databind.client.PropertyBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PropertyBinder.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> PropertyBinder&lt;T&gt; </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PropertyBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.Binding<T>
+	c743 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Binding.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.PresenterEngine<T> implements org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c734:p -> c735:p [dir=back,arrowtail=empty,style=dashed];
+	c742:p -> c740:p [dir=back,arrowtail=empty,style=dashed];
+	//org.turbogwt.mvp.databind.client.PropertyBinder<T> implements org.turbogwt.mvp.databind.client.Binder
+	c741:p -> c742:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.PropertyBinder<T>
-	c734:p -> c744:p [dir=back,arrowtail=empty,style=dashed];
+	c742:p -> c743:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.Binder
-	c746:p -> c744:p [dir=back,arrowtail=empty,style=dashed];
+	c741:p -> c743:p [dir=back,arrowtail=empty,style=dashed];
 }
 

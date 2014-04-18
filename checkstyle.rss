@@ -508,7 +508,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.Formatter.java">org/turbogwt/mvp/databind/client/format/Formatter.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingImpl.java">org/turbogwt/mvp/databind/client/BindingImpl.java</a>
                 </td>
                 <td>
                   0
@@ -522,7 +522,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingImpl.java">org/turbogwt/mvp/databind/client/BindingImpl.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.Formatter.java">org/turbogwt/mvp/databind/client/format/Formatter.java</a>
                 </td>
                 <td>
                   0

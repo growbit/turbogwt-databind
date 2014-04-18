@@ -5,32 +5,32 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
-	// org.turbogwt.mvp.databind.client.format.UnableToFormatException
-	c46 [label=<<table title="org.turbogwt.mvp.databind.client.format.UnableToFormatException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UnableToFormatException.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> UnableToFormatException </td></tr>
-		</table></td></tr>
-		</table>>, URL="./UnableToFormatException.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.format.ReadFormatter<MODEL, VIEW>
-	c47 [label=<<table title="org.turbogwt.mvp.databind.client.format.ReadFormatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReadFormatter.html">
+	c46 [label=<<table title="org.turbogwt.mvp.databind.client.format.ReadFormatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReadFormatter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReadFormatter&lt;MODEL, VIEW&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ReadFormatter.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ReadFormatter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.format.Formatter<MODEL, VIEW>
-	c48 [label=<<table title="org.turbogwt.mvp.databind.client.format.Formatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Formatter.html">
+	c47 [label=<<table title="org.turbogwt.mvp.databind.client.format.Formatter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Formatter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Formatter&lt;MODEL, VIEW&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./Formatter.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./Formatter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.format.UnableToFormatException
+	c48 [label=<<table title="org.turbogwt.mvp.databind.client.format.UnableToFormatException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UnableToFormatException.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> UnableToFormatException </td></tr>
+		</table></td></tr>
+		</table>>, URL="./UnableToFormatException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.format.Formatter<MODEL, VIEW> implements org.turbogwt.mvp.databind.client.format.ReadFormatter<MODEL, VIEW>
-	c47:p -> c48:p [dir=back,arrowtail=empty,style=dashed];
+	c46:p -> c47:p [dir=back,arrowtail=empty,style=dashed];
 }
 

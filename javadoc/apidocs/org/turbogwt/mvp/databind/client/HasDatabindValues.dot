@@ -5,34 +5,34 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
-	// org.turbogwt.mvp.databind.client.HasDatabindValues
-	c609 [label=<<table title="org.turbogwt.mvp.databind.client.HasDatabindValues" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HasDatabindValues.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> HasDatabindValues </td></tr>
-		</table></td></tr>
-		</table>>, URL="./HasDatabindValues.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.DatabindViewEngine
-	c612 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
+	c607 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DatabindViewEngine </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatabindViewEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./DatabindViewEngine.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.DatabindView
-	c613 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
+	c612 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindView </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatabindView.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./DatabindView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.HasDatabindValues
+	c618 [label=<<table title="org.turbogwt.mvp.databind.client.HasDatabindValues" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HasDatabindValues.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> HasDatabindValues </td></tr>
+		</table></td></tr>
+		</table>>, URL="./HasDatabindValues.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.DatabindViewEngine implements org.turbogwt.mvp.databind.client.HasDatabindValues
-	c609:p -> c612:p [dir=back,arrowtail=empty,style=dashed];
+	c618:p -> c607:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.DatabindView implements org.turbogwt.mvp.databind.client.HasDatabindValues
-	c609:p -> c613:p [dir=back,arrowtail=empty,style=dashed];
+	c618:p -> c612:p [dir=back,arrowtail=empty,style=dashed];
 }
 

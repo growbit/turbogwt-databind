@@ -5,35 +5,35 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c499 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c501 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./PropertyAccessor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T>
-	c501 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatePropertyAccessor.html">
+	c502 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatePropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatePropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatePropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./DatePropertyAccessor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c499:p -> c501:p [dir=back,arrowtail=empty,style=dashed];
+	c501:p -> c502:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.core.providers.client.ProvidesDate<T>
-	c511:p -> c501:p [dir=back,arrowtail=empty,style=dashed];
+	c511:p -> c502:p [dir=back,arrowtail=empty,style=dashed];
 	// org.turbogwt.core.providers.client.ProvidesDate<T>
 	c511 [label=<<table title="org.turbogwt.core.providers.client.ProvidesDate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProvidesDate&lt;T&gt; </td></tr>
 		</table></td></tr>
-		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

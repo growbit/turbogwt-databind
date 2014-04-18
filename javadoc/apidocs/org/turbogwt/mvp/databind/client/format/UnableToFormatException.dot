@@ -5,24 +5,24 @@
 #
 
 digraph G {
-	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
-	node [fontname="arial",fontsize=10,shape=plaintext];
+	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.format.UnableToFormatException
-	c903 [label=<<table title="org.turbogwt.mvp.databind.client.format.UnableToFormatException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UnableToFormatException.html">
+	c905 [label=<<table title="org.turbogwt.mvp.databind.client.format.UnableToFormatException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UnableToFormatException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UnableToFormatException </td></tr>
 		</table></td></tr>
-		</table>>, URL="./UnableToFormatException.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./UnableToFormatException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.format.UnableToFormatException extends java.lang.RuntimeException
-	c920:p -> c903:p [dir=back,arrowtail=empty];
+	c920:p -> c905:p [dir=back,arrowtail=empty];
 	// java.lang.RuntimeException
 	c920 [label=<<table title="java.lang.RuntimeException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RuntimeException </td></tr>
 		</table></td></tr>
-		</table>>, URL="http://download.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="http://download.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 
