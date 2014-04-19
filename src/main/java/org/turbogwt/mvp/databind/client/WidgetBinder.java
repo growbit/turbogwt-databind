@@ -17,7 +17,8 @@ package org.turbogwt.mvp.databind.client;
 
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
-import com.google.web.bindery.event.shared.HandlerRegistration;
+
+import org.turbogwt.core.util.Registration;
 
 /**
  * @author Danilo Reinert
@@ -35,7 +36,7 @@ public interface WidgetBinder extends Binder {
      *
      * @return HandlerRegistration of this binding
      */
-    <F> HandlerRegistration bind(String id, HasValue<F> widget, Strategy strategy);
+    <F> Registration bind(String id, HasValue<F> widget, Strategy strategy);
 
     /**
      * Bind a widget with default strategy (NONE). This binding will behavior like a read-only widget.
@@ -46,5 +47,5 @@ public interface WidgetBinder extends Binder {
      *
      * @return HandlerRegistration of this binding
      */
-    <F> HandlerRegistration bind(String id, TakesValue<F> widget);
+    <F> Registration bind(String id, TakesValue<F> widget);
 }

@@ -17,8 +17,8 @@ package org.turbogwt.mvp.databind.client.mock;
 
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
-import com.google.web.bindery.event.shared.HandlerRegistration;
 
+import org.turbogwt.core.util.Registration;
 import org.turbogwt.mvp.databind.client.DatabindUiHandler;
 import org.turbogwt.mvp.databind.client.DatabindView;
 import org.turbogwt.mvp.databind.client.DatabindViewEngine;
@@ -33,12 +33,12 @@ public class DatabindViewMock implements DatabindView {
     private final DatabindViewEngine engine = new DatabindViewEngine();
 
     @Override
-    public <F> HandlerRegistration bind(String id, HasValue<F> widget, Strategy strategy) {
+    public <F> Registration bind(String id, HasValue<F> widget, Strategy strategy) {
         return engine.bind(id, widget, strategy);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, TakesValue<F> widget) {
+    public <F> Registration bind(String id, TakesValue<F> widget) {
         return engine.bind(id, widget);
     }
 

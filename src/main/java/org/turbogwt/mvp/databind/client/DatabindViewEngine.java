@@ -22,6 +22,7 @@ import com.google.gwt.user.client.ui.HasValue;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import org.turbogwt.core.js.collections.JsMap;
+import org.turbogwt.core.util.Registration;
 
 /**
  * This class should be used by any {@link DatabindView} as a delegatee.
@@ -85,7 +86,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, HasValue<F> widget, Strategy strategy) {
+    public <F> Registration bind(String id, HasValue<F> widget, Strategy strategy) {
 //        assert (widget instanceof IsWidget) : "HasValue parameter must be of type IsWidget";
 
         // Add update handler
@@ -107,11 +108,11 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
             WidgetBinding widgetBinding = new WidgetBinding(widget, handlerRegistration);
             bindings.set(id, widgetBinding);
         }
-        return BinderHandlerRegistration.of(this, id);
+        return BinderRegistration.of(this, id);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, TakesValue<F> widget) {
+    public <F> Registration bind(String id, TakesValue<F> widget) {
 //        assert (widget instanceof IsWidget) : "TakesValue parameter must be of type IsWidget";
 
         if (bindings.contains(id)) {
@@ -121,7 +122,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
             WidgetBinding widgetBinding = new WidgetBinding(widget);
             bindings.set(id, widgetBinding);
         }
-        return BinderHandlerRegistration.of(this, id);
+        return BinderRegistration.of(this, id);
     }
 
     private <F> HandlerRegistration addChangeHandlerToBoundWidget(final String id, final HasValue<F> widget) {

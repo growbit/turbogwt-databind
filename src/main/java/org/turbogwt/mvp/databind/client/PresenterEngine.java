@@ -15,14 +15,13 @@
  */
 package org.turbogwt.mvp.databind.client;
 
-import com.google.web.bindery.event.shared.HandlerRegistration;
-
 import java.util.Iterator;
 
 import org.turbogwt.core.js.Overlays;
 import org.turbogwt.core.js.collections.JsArrayIterator;
 import org.turbogwt.core.js.collections.JsArrays;
 import org.turbogwt.core.js.collections.JsMap;
+import org.turbogwt.core.util.Registration;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
@@ -69,46 +68,46 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
 
     private final JsMap<PropertyBinding> properties = JsMap.create();
 
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
         return bind(true, id, propertyAccessor);
     }
 
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validator) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validator) {
         return bind(true, id, propertyAccessor, validator);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validator, Formatter<F, ?> formatter) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validator, Formatter<F, ?> formatter) {
         return bind(true, id, propertyAccessor, validator, formatter);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Formatter<F, ?> formatter) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Formatter<F, ?> formatter) {
         return bind(true, id, propertyAccessor, formatter);
     }
 
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor) {
         return bind(autoRefresh, id, propertyAccessor, null, null);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Formatter<F, ?> formatter) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Formatter<F, ?> formatter) {
         return bind(autoRefresh, id, propertyAccessor, null, formatter);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validator) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validator) {
         return bind(autoRefresh, id, propertyAccessor, validator, null);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validator, Formatter<F, ?> formatter) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validator, Formatter<F, ?> formatter) {
         if (properties.contains(id)) {
             PropertyBinding propertyBinding = properties.get(id);
             propertyBinding.propertyAccessor = propertyAccessor;
@@ -118,7 +117,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
             PropertyBinding propertyBinding = new PropertyBinding(autoRefresh, propertyAccessor, validator, formatter);
             properties.set(id, propertyBinding);
         }
-        return BinderHandlerRegistration.of(this, id);
+        return BinderRegistration.of(this, id);
     }
 
     /**

@@ -17,26 +17,28 @@ package org.turbogwt.mvp.databind.client;
 
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
+import org.turbogwt.core.util.Registration;
+
 /**
  * A default HandlerRegistrarion implementation to be used by {@link Binder}s.
  *
  * @author Danilo Reinert
  */
-public class BinderHandlerRegistration implements HandlerRegistration {
+public class BinderRegistration implements Registration {
 
     private final Binder binder;
     private final HandlerRegistration[] handlerRegistrations;
     private final String id;
 
-    private BinderHandlerRegistration(Binder binder, String id,
-                                      HandlerRegistration[] handlerRegistrations) {
+    private BinderRegistration(Binder binder, String id,
+                               HandlerRegistration[] handlerRegistrations) {
         this.binder = binder;
         this.id = id;
         this.handlerRegistrations = handlerRegistrations;
     }
 
     /**
-     * Creates a {@link BinderHandlerRegistration} bound with other HandlerRegistrations. By the time of unbinding, all
+     * Creates a {@link BinderRegistration} bound with other HandlerRegistrations. By the time of unbinding, all
      * handlers will be removed.
      *
      * @param binder               container
@@ -45,21 +47,21 @@ public class BinderHandlerRegistration implements HandlerRegistration {
      *
      * @return the composite handler created
      */
-    public static HandlerRegistration of(Binder binder, String id,
-                                         HandlerRegistration... handlerRegistrations) {
-        return new BinderHandlerRegistration(binder, id, handlerRegistrations);
+    public static Registration of(Binder binder, String id,
+                                  HandlerRegistration... handlerRegistrations) {
+        return new BinderRegistration(binder, id, handlerRegistrations);
     }
 
     /**
-     * Creates a {@link BinderHandlerRegistration} associated with given id.
+     * Creates a {@link BinderRegistration} associated with given id.
      *
      * @param binder container
      * @param id     identification of the binding
      *
      * @return the handler created
      */
-    public static HandlerRegistration of(Binder binder, String id) {
-        return new BinderHandlerRegistration(binder, id, null);
+    public static Registration of(Binder binder, String id) {
+        return new BinderRegistration(binder, id, null);
     }
 
     @Override

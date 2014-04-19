@@ -15,10 +15,9 @@
  */
 package org.turbogwt.mvp.databind.client;
 
-import com.google.web.bindery.event.shared.HandlerRegistration;
-
 import java.util.Iterator;
 
+import org.turbogwt.core.util.Registration;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
@@ -58,49 +57,49 @@ public class BindingImpl<T> implements Binding<T> {
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
         return engine.bind(id, propertyAccessor);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validatesValue) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validatesValue) {
         return engine.bind(id, propertyAccessor, validatesValue);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validatesValue, Formatter<F, ?> formatter) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validatesValue, Formatter<F, ?> formatter) {
         return engine.bind(id, propertyAccessor, validatesValue, formatter);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Formatter<F, ?> formatter) {
+    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Formatter<F, ?> formatter) {
         return engine.bind(id, propertyAccessor, formatter);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id,
-                                        PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(boolean autoRefresh, String id,
+                                 PropertyAccessor<T, F> propertyAccessor) {
         return engine.bind(autoRefresh, id, propertyAccessor);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Formatter<F, ?> formatter) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Formatter<F, ?> formatter) {
         return engine.bind(autoRefresh, id, propertyAccessor, formatter);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validatesValue) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validatesValue) {
         return engine.bind(autoRefresh, id, propertyAccessor, validatesValue);
     }
 
     @Override
-    public <F> HandlerRegistration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
-                                        Validator<T, F> validatesValue, Formatter<F, ?> formatter) {
+    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+                                 Validator<T, F> validatesValue, Formatter<F, ?> formatter) {
         return engine.bind(autoRefresh, id, propertyAccessor, validatesValue, formatter);
     }
 

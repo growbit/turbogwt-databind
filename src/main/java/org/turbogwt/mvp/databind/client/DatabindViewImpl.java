@@ -19,10 +19,10 @@ package org.turbogwt.mvp.databind.client;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasValue;
-import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import javax.annotation.Nullable;
 
+import org.turbogwt.core.util.Registration;
 import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
 
 /**
@@ -73,12 +73,12 @@ public abstract class DatabindViewImpl extends Composite implements DatabindView
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, HasValue<F> widget, Strategy strategy) {
+    public <F> Registration bind(String id, HasValue<F> widget, Strategy strategy) {
         return engine.bind(id, widget, strategy);
     }
 
     @Override
-    public <F> HandlerRegistration bind(String id, TakesValue<F> widget) {
+    public <F> Registration bind(String id, TakesValue<F> widget) {
         return engine.bind(id, widget);
     }
 
