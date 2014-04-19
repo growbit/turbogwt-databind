@@ -19,10 +19,10 @@ import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import java.util.Iterator;
 
-import org.turbogwt.core.js.client.Overlays;
-import org.turbogwt.core.js.collections.client.JsArrayIterator;
-import org.turbogwt.core.js.collections.client.JsArrays;
-import org.turbogwt.core.js.collections.client.JsMap;
+import org.turbogwt.core.js.Overlays;
+import org.turbogwt.core.js.collections.JsArrayIterator;
+import org.turbogwt.core.js.collections.JsArrays;
+import org.turbogwt.core.js.collections.JsMap;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
@@ -67,7 +67,6 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         }
     }
 
-    // TODO: substitute map by a simple javascript object to increase performance
     private final JsMap<PropertyBinding> properties = JsMap.create();
 
     public <F> HandlerRegistration bind(String id, PropertyAccessor<T, F> propertyAccessor) {

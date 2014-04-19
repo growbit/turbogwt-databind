@@ -15,7 +15,7 @@
  */
 package org.turbogwt.mvp.databind.client.property;
 
-import org.turbogwt.core.providers.client.ProvidesNumber;
+import org.turbogwt.core.util.ProvidesNumber;
 
 /**
  * @param <T> Model type

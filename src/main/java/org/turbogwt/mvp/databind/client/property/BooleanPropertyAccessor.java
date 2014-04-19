@@ -15,7 +15,7 @@
  */
 package org.turbogwt.mvp.databind.client.property;
 
-import org.turbogwt.core.providers.client.ProvidesBoolean;
+import org.turbogwt.core.util.ProvidesBoolean;
 
 /**
  * @param <T> Model type

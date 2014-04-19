@@ -21,7 +21,7 @@ import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
-import org.turbogwt.core.js.collections.client.JsMap;
+import org.turbogwt.core.js.collections.JsMap;
 
 /**
  * This class should be used by any {@link DatabindView} as a delegatee.
