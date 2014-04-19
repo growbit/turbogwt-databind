@@ -5,5 +5,5 @@
     <inherits name="org.turbogwt.core.js.Js"/>
     <inherits name="org.turbogwt.core.util.Util"/>
 
-    <source path="client"/>
+    <source path=""/>
 </module>

@@ -1,0 +1,44 @@
+/*
+ * Copyright 2014 Grow Bit
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.turbogwt.mvp.databind;
+
+import javax.annotation.Nullable;
+
+import org.turbogwt.mvp.databind.validation.ValidationMessage;
+
+/**
+ * This interface allows the (databind) view to handle the two possible validation events.
+ *
+ * @author Danilo Reinert
+ */
+public interface DatabindValidationHandler {
+
+    /**
+     * Notify the view of a invalid try to update a property on the model.
+     *
+     * @param property model's property id
+     * @param message  message from presenter
+     */
+    void onValidationFailure(String property, @Nullable ValidationMessage message);
+
+    /**
+     * Notify the view of a property updated on model.
+     *
+     * @param property model's property id
+     * @param message  message from presenter
+     */
+    void onValidationSuccess(String property, @Nullable ValidationMessage message);
+}

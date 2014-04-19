@@ -5,5 +5,5 @@
     <inherits name="org.turbogwt.core.js.Js"/>
     <inherits name="org.turbogwt.core.util.Util"/>
 
-    <source path="client" excludes="**/*Test.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
+    <source path="" excludes="**/*Test.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
 </module>
