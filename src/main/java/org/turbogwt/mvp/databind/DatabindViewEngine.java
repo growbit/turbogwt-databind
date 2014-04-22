@@ -15,10 +15,10 @@
  */
 package org.turbogwt.mvp.databind;
 
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import org.turbogwt.core.js.collections.JsMap;
@@ -86,14 +86,16 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
     }
 
     @Override
-    public <F> Registration bind(String id, HasValue<F> widget, Strategy strategy) {
-//        assert (widget instanceof IsWidget) : "HasValue parameter must be of type IsWidget";
+    public <F> Registration bind(final String id, final HasValue<F> widget, Strategy strategy) {
+        assert (widget instanceof IsWidget) : "HasValue parameter must be of type IsWidget";
 
         // Add update handler
-        HandlerRegistration handlerRegistration = null;
-        if (strategy == Strategy.ON_CHANGE) {
-            handlerRegistration = addChangeHandlerToBoundWidget(id, widget);
-        }
+        HandlerRegistration handlerRegistration = strategy.bind((IsWidget) widget, new Command() {
+            @Override
+            public void execute() {
+                fireValueChangedEvent(id, widget);
+            }
+        });
 
         if (bindings.contains(id)) {
             // If id were already bound, then update the binding
@@ -125,18 +127,6 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
         return BinderRegistration.of(this, id);
     }
 
-    private <F> HandlerRegistration addChangeHandlerToBoundWidget(final String id, final HasValue<F> widget) {
-        return widget.addValueChangeHandler(new ValueChangeHandler<F>() {
-            @Override
-            public void onValueChange(ValueChangeEvent<F> event) {
-                // Avoid NPE. The null uiHandler should be notified before reaching here.
-                if (uiHandler != null) {
-                    uiHandler.onValueChanged(id, event.getValue());
-                }
-            }
-        });
-    }
-
     @Override
     public boolean unbind(String id) {
         final WidgetBinding widgetBinding = bindings.get(id);
@@ -148,5 +138,12 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
             return true;
         }
         return false;
+    }
+
+    private <F> void fireValueChangedEvent(String id, HasValue<F> widget) {
+        // Avoid NPE. The null uiHandler should be notified before reaching here.
+        if (uiHandler != null) {
+            uiHandler.onValueChanged(id, widget.getValue());
+        }
     }
 }

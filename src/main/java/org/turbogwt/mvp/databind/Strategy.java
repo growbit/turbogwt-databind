@@ -15,12 +15,36 @@
  */
 package org.turbogwt.mvp.databind;
 
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import com.google.gwt.user.client.ui.HasValue;
+import com.google.gwt.user.client.ui.IsWidget;
+import com.google.web.bindery.event.shared.HandlerRegistration;
+
 /**
  * Represents the way values are updated on the databinding.
  *
  * @author Danilo Reinert
  */
-public enum Strategy {
+public enum Strategy implements WidgetBindingStrategy {
     // TODO: Add other strategies: onKey(Up).
-    ON_CHANGE, NONE
+    ON_CHANGE {
+        @Override
+        public HandlerRegistration bind(IsWidget widget, final Scheduler.ScheduledCommand command) {
+            assert widget instanceof HasValue : "Widget must implement HasValue interface.";
+            HasValue hasValue = (HasValue) widget;
+            return hasValue.addValueChangeHandler(new ValueChangeHandler() {
+                @Override
+                public void onValueChange(ValueChangeEvent event) {
+                    command.execute();
+                }
+            });
+        }
+    }, NONE {
+        @Override
+        public HandlerRegistration bind(IsWidget widget, Scheduler.ScheduledCommand command) {
+            return null;
+        }
+    }
 }
