@@ -22,19 +22,29 @@ import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.HasValue;
+import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.user.client.ui.Widget;
 
 /**
  * @param <V> Value type
  *
  * @author Danilo Reinert
  */
-public class HasValueMock<V> extends TakesValueMock<V> implements HasValue<V> {
+public class HasValueMock<V> extends TakesValueMock<V> implements HasValue<V>, IsWidget {
 
     private HandlerManager handlerManager;
 
     @Override
     public HandlerRegistration addValueChangeHandler(ValueChangeHandler<V> handler) {
         return addHandler(handler, ValueChangeEvent.getType());
+    }
+
+    /**
+     * Returns the {@link com.google.gwt.user.client.ui.Widget} aspect of the receiver.
+     */
+    @Override
+    public Widget asWidget() {
+        return null;
     }
 
     @Override

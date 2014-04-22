@@ -18,6 +18,7 @@ package org.turbogwt.mvp.databind;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import org.turbogwt.mvp.databind.mock.HasValueMock;
@@ -33,14 +34,15 @@ public class DatabindViewEngineTest extends GWTTestCase {
     }
 
     interface BindWidgetCallback {
-        HandlerRegistration bind(DatabindViewEngine engine, String propertyId, TakesValue widget);
+        HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget);
     }
 
     public void testBindReadOnlyWidget() {
         doTestBindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, TakesValue widget) {
-                return engine.bind(propertyId, widget);
+            @SuppressWarnings("unchecked")
+            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+                return engine.bind(propertyId, (TakesValue<Object>) widget);
             }
         });
     }
@@ -48,7 +50,7 @@ public class DatabindViewEngineTest extends GWTTestCase {
     public void testBindWidget() {
         doTestBindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, TakesValue widget) {
+            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (HasValue<?>) widget, Strategy.ON_CHANGE);
             }
         });
@@ -57,8 +59,9 @@ public class DatabindViewEngineTest extends GWTTestCase {
     public void testUnbindReadOnlyWidget() {
         doTestUnbindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, TakesValue widget) {
-                return engine.bind(propertyId, widget);
+            @SuppressWarnings("unchecked")
+            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+                return engine.bind(propertyId, (TakesValue<Object>) widget);
             }
         });
     }
@@ -66,7 +69,7 @@ public class DatabindViewEngineTest extends GWTTestCase {
     public void testUnbindWidget() {
         doTestUnbindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, TakesValue widget) {
+            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (HasValue<?>) widget, Strategy.ON_CHANGE);
             }
         });
@@ -81,7 +84,7 @@ public class DatabindViewEngineTest extends GWTTestCase {
         final String propertyId = "someProperty";
         final String initialValue = "initialValue";
 
-        final HasValue<String> takesString = new HasValueMock<String>();
+        final HasValueMock<String> takesString = new HasValueMock<String>();
         takesString.setValue(initialValue);
 
         // Bind the widget to the view
@@ -111,10 +114,10 @@ public class DatabindViewEngineTest extends GWTTestCase {
         final String otherProperty = "otherProperty";
         final Double otherPropertyInitialValue = 3.42;
 
-        final HasValue<String> somePropertyWidget = new HasValueMock<String>();
+        final HasValueMock<String> somePropertyWidget = new HasValueMock<String>();
         somePropertyWidget.setValue(somePropertyInitialValue);
 
-        final HasValue<Double> otherPropertyWidget = new HasValueMock<Double>();
+        final HasValueMock<Double> otherPropertyWidget = new HasValueMock<Double>();
         otherPropertyWidget.setValue(otherPropertyInitialValue);
 
         // Bind the widget to the view
