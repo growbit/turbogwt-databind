@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./WidgetBinder.html" title="org.turbogwt.mvp.databind.WidgetBinder" alt="" coords="43,10,141,54"/>
+<area shape="rect" id="node1" href="./WidgetBinder.html" title="&lt;TABLE&gt;" alt="" coords="32,5,152,59"/>
+<area shape="rect" id="node4_1" href="./DatabindViewEngine.html" title="org.turbogwt.mvp.databind.DatabindViewEngine" alt="" coords="238,97,378,124"/>
+<area shape="rect" id="node4" href="./DatabindViewEngine.html" title="&lt;TABLE&gt;" alt="" coords="227,87,389,135"/>
+<area shape="rect" id="node2_2" href="./HasDatabindValues.html" title="org.turbogwt.mvp.databind.HasDatabindValues" alt="" coords="25,89,159,133"/>
+<area shape="rect" id="node2" href="./HasDatabindValues.html" title="&lt;TABLE&gt;" alt="" coords="14,83,170,138"/>
+<area shape="rect" id="node3_3" href="./HasDatabindUiHandler.html" title="org.turbogwt.mvp.databind.HasDatabindUiHandler" alt="" coords="17,167,167,211"/>
+<area shape="rect" id="node3" href="./HasDatabindUiHandler.html" title="&lt;TABLE&gt;" alt="" coords="6,162,178,217"/>
+</map>

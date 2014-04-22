@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./TextPropertyAccessor.html" title="org.turbogwt.mvp.databind.property.TextPropertyAccessor" alt="" coords="472,10,645,54"/>
+<area shape="rect" id="node1" href="./TextPropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="461,5,656,59"/>
+<area shape="rect" id="node2_1" href="./PropertyAccessor.html" title="org.turbogwt.mvp.databind.property.PropertyAccessor" alt="" coords="227,129,391,173"/>
+<area shape="rect" id="node2" href="./PropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="217,123,402,178"/>
+<area shape="rect" id="node3_2" href="./NumberPropertyAccessor.html" title="org.turbogwt.mvp.databind.property.NumberPropertyAccessor" alt="" coords="462,89,655,133"/>
+<area shape="rect" id="node3" href="./NumberPropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="451,83,666,138"/>
+<area shape="rect" id="node4_3" href="./DatePropertyAccessor.html" title="org.turbogwt.mvp.databind.property.DatePropertyAccessor" alt="" coords="471,167,646,211"/>
+<area shape="rect" id="node4" href="./DatePropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="461,162,657,217"/>
+<area shape="rect" id="node5_4" href="./BooleanPropertyAccessor.html" title="org.turbogwt.mvp.databind.property.BooleanPropertyAccessor" alt="" coords="461,246,656,290"/>
+<area shape="rect" id="node5" href="./BooleanPropertyAccessor.html" title="&lt;TABLE&gt;" alt="" coords="451,241,667,295"/>
+<area shape="rect" id="node6" href="null" title="&lt;TABLE&gt;" alt="" coords="5,123,168,178"/>
+</map>

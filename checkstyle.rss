@@ -25,7 +25,7 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2014</copyright>
     <item>
-      <title>File: 44,
+      <title>File: 45,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.Binder.java">org/turbogwt/mvp/databind/client/Binder.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindGwtTestSuite.java">org/turbogwt/mvp/databind/DatabindGwtTestSuite.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.mock.TakesValueMock.java">org/turbogwt/mvp/databind/client/mock/TakesValueMock.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.HasDatabindValues.java">org/turbogwt/mvp/databind/HasDatabindValues.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.Validator.java">org/turbogwt/mvp/databind/client/validation/Validator.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.property.PropertyAccessor.java">org/turbogwt/mvp/databind/property/PropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.person.PersonProperties.java">org/turbogwt/mvp/databind/client/person/PersonProperties.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindValidationHandler.java">org/turbogwt/mvp/databind/DatabindValidationHandler.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.ValidationFailureHandler.java">org/turbogwt/mvp/databind/client/validation/ValidationFailureHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.HasDatabindUiHandler.java">org/turbogwt/mvp/databind/HasDatabindUiHandler.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindViewImpl.java">org/turbogwt/mvp/databind/client/DatabindViewImpl.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.PropertyBinder.java">org/turbogwt/mvp/databind/PropertyBinder.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasDatabindValues.java">org/turbogwt/mvp/databind/client/HasDatabindValues.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.person.PersonGwtTestCase.java">org/turbogwt/mvp/databind/person/PersonGwtTestCase.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.ReadFormatter.java">org/turbogwt/mvp/databind/client/format/ReadFormatter.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.EmailValidator.java">org/turbogwt/mvp/databind/validation/EmailValidator.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindValidationHandler.java">org/turbogwt/mvp/databind/client/DatabindValidationHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindViewEngine.java">org/turbogwt/mvp/databind/DatabindViewEngine.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor.java">org/turbogwt/mvp/databind/client/property/BooleanPropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.ValidationMessage.java">org/turbogwt/mvp/databind/validation/ValidationMessage.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasDatabindUiHandler.java">org/turbogwt/mvp/databind/client/HasDatabindUiHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.property.TextPropertyAccessor.java">org/turbogwt/mvp/databind/property/TextPropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.ValidationMessage.java">org/turbogwt/mvp/databind/client/validation/ValidationMessage.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.BindingTest.java">org/turbogwt/mvp/databind/BindingTest.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.PropertyAccessor.java">org/turbogwt/mvp/databind/client/property/PropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.person.PersonViewImpl.java">org/turbogwt/mvp/databind/person/PersonViewImpl.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.RequiredValidatorTest.java">org/turbogwt/mvp/databind/client/validation/RequiredValidatorTest.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.BinderRegistration.java">org/turbogwt/mvp/databind/BinderRegistration.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.TextPropertyAccessor.java">org/turbogwt/mvp/databind/client/property/TextPropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindUiHandler.java">org/turbogwt/mvp/databind/DatabindUiHandler.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BinderHandlerRegistration.java">org/turbogwt/mvp/databind/client/BinderHandlerRegistration.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.Strategy.java">org/turbogwt/mvp/databind/Strategy.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.person.PersonViewImpl.java">org/turbogwt/mvp/databind/client/person/PersonViewImpl.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.RequiredValidatorTest.java">org/turbogwt/mvp/databind/validation/RequiredValidatorTest.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.person.Person.java">org/turbogwt/mvp/databind/client/person/Person.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.mock.TakesValueMock.java">org/turbogwt/mvp/databind/mock/TakesValueMock.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingTest.java">org/turbogwt/mvp/databind/client/BindingTest.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.PresenterEngine.java">org/turbogwt/mvp/databind/PresenterEngine.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.Binding.java">org/turbogwt/mvp/databind/client/Binding.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.Validation.java">org/turbogwt/mvp/databind/validation/Validation.java</a>
                 </td>
                 <td>
                   0
@@ -326,7 +326,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.PropertyBinder.java">org/turbogwt/mvp/databind/client/PropertyBinder.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.Binding.java">org/turbogwt/mvp/databind/Binding.java</a>
                 </td>
                 <td>
                   0
@@ -340,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.PresenterEngine.java">org/turbogwt/mvp/databind/client/PresenterEngine.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.person.PersonPresenter.java">org/turbogwt/mvp/databind/person/PersonPresenter.java</a>
                 </td>
                 <td>
                   0
@@ -354,7 +354,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.mock.DatabindViewMock.java">org/turbogwt/mvp/databind/client/mock/DatabindViewMock.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.property.NumberPropertyAccessor.java">org/turbogwt/mvp/databind/property/NumberPropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -368,7 +368,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.Validation.java">org/turbogwt/mvp/databind/client/validation/Validation.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.RequiredValidator.java">org/turbogwt/mvp/databind/validation/RequiredValidator.java</a>
                 </td>
                 <td>
                   0
@@ -382,7 +382,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.EmailValidatorTest.java">org/turbogwt/mvp/databind/client/validation/EmailValidatorTest.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.format.Formatter.java">org/turbogwt/mvp/databind/format/Formatter.java</a>
                 </td>
                 <td>
                   0
@@ -396,7 +396,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.WidgetBinder.java">org/turbogwt/mvp/databind/client/WidgetBinder.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.BindingImpl.java">org/turbogwt/mvp/databind/BindingImpl.java</a>
                 </td>
                 <td>
                   0
@@ -410,7 +410,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.mock.HasValueMock.java">org/turbogwt/mvp/databind/client/mock/HasValueMock.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.format.ReadFormatter.java">org/turbogwt/mvp/databind/format/ReadFormatter.java</a>
                 </td>
                 <td>
                   0
@@ -424,7 +424,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindViewEngineTest.java">org/turbogwt/mvp/databind/client/DatabindViewEngineTest.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.EmailValidatorTest.java">org/turbogwt/mvp/databind/validation/EmailValidatorTest.java</a>
                 </td>
                 <td>
                   0
@@ -438,7 +438,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.RequiredValidator.java">org/turbogwt/mvp/databind/client/validation/RequiredValidator.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.Validator.java">org/turbogwt/mvp/databind/validation/Validator.java</a>
                 </td>
                 <td>
                   0
@@ -452,7 +452,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.ValidationHandler.java">org/turbogwt/mvp/databind/client/validation/ValidationHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.mock.HasValueMock.java">org/turbogwt/mvp/databind/mock/HasValueMock.java</a>
                 </td>
                 <td>
                   0
@@ -466,7 +466,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindTestSuite.java">org/turbogwt/mvp/databind/client/DatabindTestSuite.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.person.Person.java">org/turbogwt/mvp/databind/person/Person.java</a>
                 </td>
                 <td>
                   0
@@ -480,7 +480,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.DatePropertyAccessor.java">org/turbogwt/mvp/databind/client/property/DatePropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.ValidationHandler.java">org/turbogwt/mvp/databind/validation/ValidationHandler.java</a>
                 </td>
                 <td>
                   0
@@ -494,7 +494,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindUiHandler.java">org/turbogwt/mvp/databind/client/DatabindUiHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.format.UnableToFormatException.java">org/turbogwt/mvp/databind/format/UnableToFormatException.java</a>
                 </td>
                 <td>
                   0
@@ -508,7 +508,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingImpl.java">org/turbogwt/mvp/databind/client/BindingImpl.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.property.BooleanPropertyAccessor.java">org/turbogwt/mvp/databind/property/BooleanPropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -522,7 +522,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.Formatter.java">org/turbogwt/mvp/databind/client/format/Formatter.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.validation.ValidationFailureHandler.java">org/turbogwt/mvp/databind/validation/ValidationFailureHandler.java</a>
                 </td>
                 <td>
                   0
@@ -536,7 +536,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindGwtTestSuite.java">org/turbogwt/mvp/databind/client/DatabindGwtTestSuite.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.WidgetBindingStrategy.java">org/turbogwt/mvp/databind/WidgetBindingStrategy.java</a>
                 </td>
                 <td>
                   0
@@ -550,7 +550,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor.java">org/turbogwt/mvp/databind/client/property/NumberPropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.person.PersonProperties.java">org/turbogwt/mvp/databind/person/PersonProperties.java</a>
                 </td>
                 <td>
                   0
@@ -564,7 +564,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.Strategy.java">org/turbogwt/mvp/databind/client/Strategy.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.mock.DatabindViewMock.java">org/turbogwt/mvp/databind/mock/DatabindViewMock.java</a>
                 </td>
                 <td>
                   0
@@ -578,7 +578,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.person.PersonGwtTestCase.java">org/turbogwt/mvp/databind/client/person/PersonGwtTestCase.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindView.java">org/turbogwt/mvp/databind/DatabindView.java</a>
                 </td>
                 <td>
                   0
@@ -592,7 +592,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.UnableToFormatException.java">org/turbogwt/mvp/databind/client/format/UnableToFormatException.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindViewImpl.java">org/turbogwt/mvp/databind/DatabindViewImpl.java</a>
                 </td>
                 <td>
                   0
@@ -606,7 +606,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.validation.EmailValidator.java">org/turbogwt/mvp/databind/client/validation/EmailValidator.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindViewEngineTest.java">org/turbogwt/mvp/databind/DatabindViewEngineTest.java</a>
                 </td>
                 <td>
                   0
@@ -620,7 +620,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.person.PersonPresenter.java">org/turbogwt/mvp/databind/client/person/PersonPresenter.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindTestSuite.java">org/turbogwt/mvp/databind/DatabindTestSuite.java</a>
                 </td>
                 <td>
                   0
@@ -634,7 +634,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindViewEngine.java">org/turbogwt/mvp/databind/client/DatabindViewEngine.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.property.DatePropertyAccessor.java">org/turbogwt/mvp/databind/property/DatePropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -648,7 +648,21 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindView.java">org/turbogwt/mvp/databind/client/DatabindView.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.Binder.java">org/turbogwt/mvp/databind/Binder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.WidgetBinder.java">org/turbogwt/mvp/databind/WidgetBinder.java</a>
                 </td>
                 <td>
                   0

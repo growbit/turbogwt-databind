@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./WidgetBinder.html" title="org.turbogwt.mvp.databind.WidgetBinder" alt="" coords="187,10,285,54"/>
+<area shape="rect" id="node1" href="./WidgetBinder.html" title="&lt;TABLE&gt;" alt="" coords="176,5,296,59"/>
+<area shape="rect" id="node2_1" href="./PropertyBinder.html" title="org.turbogwt.mvp.databind.PropertyBinder" alt="" coords="171,89,301,133"/>
+<area shape="rect" id="node2" href="./PropertyBinder.html" title="&lt;TABLE&gt;" alt="" coords="161,83,311,138"/>
+<area shape="rect" id="node3_2" href="./Binding.html" title="org.turbogwt.mvp.databind.Binding" alt="" coords="371,122,458,166"/>
+<area shape="rect" id="node3" href="./Binding.html" title="&lt;TABLE&gt;" alt="" coords="361,117,469,171"/>
+<area shape="rect" id="node4_3" href="./Binder.html" title="org.turbogwt.mvp.databind.Binder" alt="" coords="17,89,101,133"/>
+<area shape="rect" id="node4" href="./Binder.html" title="&lt;TABLE&gt;" alt="" coords="6,83,111,138"/>
+</map>
