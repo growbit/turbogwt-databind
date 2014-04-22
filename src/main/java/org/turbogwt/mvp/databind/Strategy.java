@@ -16,6 +16,9 @@
 package org.turbogwt.mvp.databind;
 
 import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.event.dom.client.HasKeyUpHandlers;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.user.client.ui.HasValue;
@@ -31,12 +34,25 @@ public enum Strategy implements WidgetBindingStrategy {
     // TODO: Add other strategies: onKey(Up).
     ON_CHANGE {
         @Override
+        @SuppressWarnings("unchecked")
         public HandlerRegistration bind(IsWidget widget, final Scheduler.ScheduledCommand command) {
             assert widget instanceof HasValue : "Widget must implement HasValue interface.";
             HasValue hasValue = (HasValue) widget;
             return hasValue.addValueChangeHandler(new ValueChangeHandler() {
                 @Override
                 public void onValueChange(ValueChangeEvent event) {
+                    command.execute();
+                }
+            });
+        }
+    }, ON_KEY_UP {
+        @Override
+        public HandlerRegistration bind(IsWidget widget, final Scheduler.ScheduledCommand command) {
+            assert widget instanceof HasKeyUpHandlers : "Widget must implement HasKeyUpHandlers interface.";
+            HasKeyUpHandlers hasKeyUpHandlers = (HasKeyUpHandlers) widget;
+            return hasKeyUpHandlers.addKeyUpHandler(new KeyUpHandler() {
+                @Override
+                public void onKeyUp(KeyUpEvent event) {
                     command.execute();
                 }
             });
