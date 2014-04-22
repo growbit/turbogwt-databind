@@ -87,7 +87,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
 
     @Override
     public <F> Registration bind(final String id, final HasValue<F> widget, Strategy strategy) {
-        assert (widget instanceof IsWidget) : "HasValue parameter must be of type IsWidget";
+        assert widget instanceof IsWidget : "HasValue parameter must be of type IsWidget";
 
         // Add update handler
         HandlerRegistration handlerRegistration = strategy.bind((IsWidget) widget, new Command() {

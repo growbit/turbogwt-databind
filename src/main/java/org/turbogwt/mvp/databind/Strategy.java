@@ -26,12 +26,14 @@ import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
 /**
- * Represents the way values are updated on the databinding.
+ * It is responsible for performing the binding on the widget.
+ *
+ * The necessary previous assertions must be made in order to add the handler to the widget.
  *
  * @author Danilo Reinert
  */
 public enum Strategy implements WidgetBindingStrategy {
-    // TODO: Add other strategies: onKey(Up).
+
     ON_CHANGE {
         @Override
         @SuppressWarnings("unchecked")
@@ -45,7 +47,9 @@ public enum Strategy implements WidgetBindingStrategy {
                 }
             });
         }
-    }, ON_KEY_UP {
+    },
+
+    ON_KEY_UP {
         @Override
         public HandlerRegistration bind(IsWidget widget, final Scheduler.ScheduledCommand command) {
             assert widget instanceof HasKeyUpHandlers : "Widget must implement HasKeyUpHandlers interface.";
@@ -57,7 +61,9 @@ public enum Strategy implements WidgetBindingStrategy {
                 }
             });
         }
-    }, NONE {
+    },
+
+    NONE {
         @Override
         public HandlerRegistration bind(IsWidget widget, Scheduler.ScheduledCommand command) {
             return null;
