@@ -1,4 +1,4 @@
-Turbo GWT (*TurboG*) MVP Databind
+Turbo GWT (*TurboG*) MVP Databind [![Build Status](https://travis-ci.org/growbit/turbogwt-databind.svg?branch=master)](https://travis-ci.org/growbit/turbogwt-databind)
 ==
 
 [**Turbo GWT**](http://github.com/growbit/turbogwt) is a suite of libs intended to speed up development of GWT applications. It aims to promote a fluent and enjoyable programming.
