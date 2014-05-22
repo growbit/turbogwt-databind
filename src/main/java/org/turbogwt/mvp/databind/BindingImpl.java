@@ -34,7 +34,7 @@ import org.turbogwt.mvp.databind.validation.Validator;
  */
 public class BindingImpl<T> implements Binding<T> {
 
-    private final PresenterEngine<T> engine = new PresenterEngine<T>();
+    private final PresenterEngine<T> engine = new PresenterEngine<>();
     private final DatabindView view;
     private T model;
 
