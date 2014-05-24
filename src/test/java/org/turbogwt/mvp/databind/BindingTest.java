@@ -15,13 +15,16 @@
  */
 package org.turbogwt.mvp.databind;
 
-import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
+import com.google.gwtmockito.GwtMockito;
+import com.google.gwtmockito.fakes.FakeProvider;
 
 import java.util.Date;
 
 import javax.annotation.Nullable;
+
+import junit.framework.TestCase;
 
 import org.turbogwt.mvp.databind.format.Formatter;
 import org.turbogwt.mvp.databind.format.UnableToFormatException;
@@ -35,17 +38,30 @@ import org.turbogwt.mvp.databind.property.TextPropertyAccessor;
 /**
  * @author Danilo Reinert
  */
-public class BindingTest extends GWTTestCase {
-
-    @Override
-    public String getModuleName() {
-        return "org.turbogwt.mvp.databind.DatabindTest";
-    }
+public class BindingTest extends TestCase {
 
     static class Model {
         Date dateValue;
         Integer intValue;
         String stringValue;
+    }
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+        GwtMockito.initMocks(this);
+        GwtMockito.useProviderForType(PresenterEngine.PropertyBindingMap.class, new FakeProvider<Object>() {
+            @Override
+            public Object getFake(Class<?> type) {
+                return new PropertyBindingMapForTest();
+            }
+        });
+        GwtMockito.useProviderForType(DatabindViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
+            @Override
+            public Object getFake(Class<?> type) {
+                return new WidgetBindingMapForTest();
+            }
+        });
     }
 
     public void testBindPropertyWithAccessorOnly() {

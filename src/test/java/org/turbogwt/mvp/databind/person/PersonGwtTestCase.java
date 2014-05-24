@@ -16,7 +16,6 @@
 
 package org.turbogwt.mvp.databind.person;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
 
 import java.util.Date;
@@ -33,7 +32,7 @@ public class PersonGwtTestCase extends GWTTestCase {
 
     public void testValueChangesAndFormatting() {
         // Create view
-        final PersonViewImpl view = GWT.create(PersonViewImpl.class);
+        final PersonViewImpl view = new PersonViewImpl();
 
         // Create presenter
         final PersonPresenter presenter = new PersonPresenter(view);
@@ -80,7 +79,7 @@ public class PersonGwtTestCase extends GWTTestCase {
 
     public void testValidations() {
         // Create view (all properties initially set as valid)
-        final PersonViewImpl view = GWT.create(PersonViewImpl.class);
+        final PersonViewImpl view = new PersonViewImpl();
 
         // Create presenter
         final PersonPresenter presenter = new PersonPresenter(view);

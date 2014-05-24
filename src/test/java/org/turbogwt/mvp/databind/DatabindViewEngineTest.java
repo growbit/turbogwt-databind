@@ -15,26 +15,36 @@
  */
 package org.turbogwt.mvp.databind;
 
-import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwtmockito.GwtMockito;
+import com.google.gwtmockito.fakes.FakeProvider;
 import com.google.web.bindery.event.shared.HandlerRegistration;
+
+import junit.framework.TestCase;
 
 import org.turbogwt.mvp.databind.mock.HasValueMock;
 
 /**
  * @author Danilo Reinert
  */
-public class DatabindViewEngineTest extends GWTTestCase {
-
-    @Override
-    public String getModuleName() {
-        return "org.turbogwt.mvp.databind.DatabindTest";
-    }
+public class DatabindViewEngineTest extends TestCase {
 
     interface BindWidgetCallback {
         HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget);
+    }
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+        GwtMockito.initMocks(this);
+        GwtMockito.useProviderForType(DatabindViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
+            @Override
+            public Object getFake(Class<?> type) {
+                return new WidgetBindingMapForTest();
+            }
+        });
     }
 
     public void testBindReadOnlyWidget() {
