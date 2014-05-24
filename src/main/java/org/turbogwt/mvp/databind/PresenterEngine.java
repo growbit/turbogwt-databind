@@ -15,10 +15,12 @@
  */
 package org.turbogwt.mvp.databind;
 
-import java.util.Iterator;
+import com.google.gwt.core.shared.GWT;
 
-import org.turbogwt.core.js.collections.JsArrayIterator;
-import org.turbogwt.core.js.collections.JsMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.turbogwt.core.js.collections.JsFastMap;
 import org.turbogwt.core.util.Registration;
 import org.turbogwt.mvp.databind.format.Formatter;
 import org.turbogwt.mvp.databind.format.UnableToFormatException;
@@ -34,7 +36,9 @@ import org.turbogwt.mvp.databind.validation.Validator;
 @SuppressWarnings("unchecked")
 public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
 
-    private static class PropertyBinding {
+    public static class PropertyBindingMap extends JsFastMap<PropertyBinding> { }
+
+    public static class PropertyBinding {
 
         PropertyAccessor propertyAccessor;
         Validator validator;
@@ -64,7 +68,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         }
     }
 
-    private final JsMap<PropertyBinding> properties = JsMap.create();
+    private final Map<String, PropertyBinding> properties = GWT.create(PropertyBindingMap.class);
 
     public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
         return bind(true, id, propertyAccessor);
@@ -106,14 +110,14 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     @Override
     public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
                                  Validator<T, F> validator, Formatter<F, ?> formatter) {
-        if (properties.contains(id)) {
+        if (properties.containsKey(id)) {
             PropertyBinding propertyBinding = properties.get(id);
             propertyBinding.propertyAccessor = propertyAccessor;
             propertyBinding.validator = validator;
             propertyBinding.formatter = formatter;
         } else {
             PropertyBinding propertyBinding = new PropertyBinding(autoRefresh, propertyAccessor, validator, formatter);
-            properties.set(id, propertyBinding);
+            properties.put(id, propertyBinding);
         }
         return BinderRegistration.of(this, id);
     }
@@ -192,7 +196,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     }
 
     public boolean hasProperty(String id) {
-        return properties.contains(id);
+        return properties.containsKey(id);
     }
 
     /**
@@ -202,12 +206,12 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
      */
     @Override
     public Iterator<String> iterator() {
-        return new JsArrayIterator<>(properties.keys());
+        return properties.keySet().iterator();
     }
 
     @Override
     public boolean unbind(String id) {
-        boolean removed = properties.contains(id);
+        boolean removed = properties.containsKey(id);
         properties.remove(id);
         return removed;
     }
