@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2014</copyright>
     <item>
-      <title>File: 45,
+      <title>File: 46,
              Errors: 0,
-             Warnings: 0,
-             Infos: 0
+             Warnings: 2,
+             Infos: 6
       </title>
             <link>http://turbogwt.org/checkstyle.html</link>
       <description>
@@ -44,20 +44,6 @@ under the License.
             </tr>
           </thead>
           <tbody>
-                          <tr>
-                <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindGwtTestSuite.java">org/turbogwt/mvp/databind/DatabindGwtTestSuite.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
                           <tr>
                 <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.HasDatabindValues.java">org/turbogwt/mvp/databind/HasDatabindValues.java</a>
@@ -161,7 +147,7 @@ under the License.
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.DatabindViewEngine.java">org/turbogwt/mvp/databind/DatabindViewEngine.java</a>
                 </td>
                 <td>
-                  0
+                  2
                 </td>
                 <td>
                   0
@@ -284,6 +270,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.WidgetBindingMapForTest.java">org/turbogwt/mvp/databind/WidgetBindingMapForTest.java</a>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.mock.TakesValueMock.java">org/turbogwt/mvp/databind/mock/TakesValueMock.java</a>
                 </td>
                 <td>
@@ -301,7 +301,7 @@ under the License.
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.PresenterEngine.java">org/turbogwt/mvp/databind/PresenterEngine.java</a>
                 </td>
                 <td>
-                  0
+                  2
                 </td>
                 <td>
                   0
@@ -669,6 +669,20 @@ under the License.
                 </td>
                 <td>
                   0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.PropertyBindingMapForTest.java">org/turbogwt/mvp/databind/PropertyBindingMapForTest.java</a>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
                 </td>
                 <td>
                   0

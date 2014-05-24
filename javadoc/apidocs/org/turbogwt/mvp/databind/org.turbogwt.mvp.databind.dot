@@ -44,110 +44,134 @@ digraph G {
 <tr><td align="center" balign="center"> PresenterEngine&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PresenterEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.PresenterEngine.PropertyBindingMap
+	c5 [label=<<table title="org.turbogwt.mvp.databind.PresenterEngine.PropertyBindingMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PresenterEngine.PropertyBindingMap.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PropertyBindingMap </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PresenterEngine.PropertyBindingMap.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.PresenterEngine.PropertyBinding
+	c6 [label=<<table title="org.turbogwt.mvp.databind.PresenterEngine.PropertyBinding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PresenterEngine.PropertyBinding.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PropertyBinding </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PresenterEngine.PropertyBinding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.HasDatabindValues
-	c5 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindValues" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HasDatabindValues.html">
+	c7 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindValues" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HasDatabindValues.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HasDatabindValues </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HasDatabindValues.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c6 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HasDatabindUiHandler.html">
+	c8 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HasDatabindUiHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HasDatabindUiHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HasDatabindUiHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindViewImpl
-	c7 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewImpl.html">
+	c9 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> DatabindViewImpl </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindViewImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindViewEngine
-	c8 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
+	c10 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DatabindViewEngine </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindViewEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.DatabindViewEngine.WidgetBindingMap
+	c11 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine.WidgetBindingMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.WidgetBindingMap.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> WidgetBindingMap </td></tr>
+		</table></td></tr>
+		</table>>, URL="./DatabindViewEngine.WidgetBindingMap.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.DatabindViewEngine.WidgetBinding
+	c12 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine.WidgetBinding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.WidgetBinding.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> WidgetBinding </td></tr>
+		</table></td></tr>
+		</table>>, URL="./DatabindViewEngine.WidgetBinding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindView
-	c9 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
+	c13 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindView </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindView.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindValidationHandler
-	c10 [label=<<table title="org.turbogwt.mvp.databind.DatabindValidationHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindValidationHandler.html">
+	c14 [label=<<table title="org.turbogwt.mvp.databind.DatabindValidationHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindValidationHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindValidationHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindValidationHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindUiHandler
-	c11 [label=<<table title="org.turbogwt.mvp.databind.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindUiHandler.html">
+	c15 [label=<<table title="org.turbogwt.mvp.databind.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindUiHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindUiHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindUiHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.BindingImpl<T>
-	c12 [label=<<table title="org.turbogwt.mvp.databind.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BindingImpl.html">
+	c16 [label=<<table title="org.turbogwt.mvp.databind.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BindingImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BindingImpl&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BindingImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.Binding<T>
-	c13 [label=<<table title="org.turbogwt.mvp.databind.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
+	c17 [label=<<table title="org.turbogwt.mvp.databind.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.BinderRegistration
-	c14 [label=<<table title="org.turbogwt.mvp.databind.BinderRegistration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BinderRegistration.html">
+	c18 [label=<<table title="org.turbogwt.mvp.databind.BinderRegistration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BinderRegistration.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BinderRegistration </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BinderRegistration.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.Binder
-	c15 [label=<<table title="org.turbogwt.mvp.databind.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
+	c19 [label=<<table title="org.turbogwt.mvp.databind.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.WidgetBinder implements org.turbogwt.mvp.databind.Binder
-	c15:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
+	c19:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.Strategy implements org.turbogwt.mvp.databind.WidgetBindingStrategy
 	c0:p -> c2:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.PropertyBinder<T> implements org.turbogwt.mvp.databind.Binder
-	c15:p -> c3:p [dir=back,arrowtail=empty,style=dashed];
+	c19:p -> c3:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.PresenterEngine<T> implements org.turbogwt.mvp.databind.PropertyBinder<T>
 	c3:p -> c4:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindViewImpl implements org.turbogwt.mvp.databind.DatabindView
-	c9:p -> c7:p [dir=back,arrowtail=empty,style=dashed];
+	c13:p -> c9:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindViewEngine implements org.turbogwt.mvp.databind.WidgetBinder
-	c1:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
+	c1:p -> c10:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindViewEngine implements org.turbogwt.mvp.databind.HasDatabindValues
-	c5:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
+	c7:p -> c10:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindViewEngine implements org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c6:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
+	c8:p -> c10:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c6:p -> c9:p [dir=back,arrowtail=empty,style=dashed];
+	c8:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.HasDatabindValues
-	c5:p -> c9:p [dir=back,arrowtail=empty,style=dashed];
+	c7:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.WidgetBinder
-	c1:p -> c9:p [dir=back,arrowtail=empty,style=dashed];
+	c1:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.DatabindValidationHandler
-	c10:p -> c9:p [dir=back,arrowtail=empty,style=dashed];
+	c14:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.BindingImpl<T> implements org.turbogwt.mvp.databind.Binding<T>
-	c13:p -> c12:p [dir=back,arrowtail=empty,style=dashed];
+	c17:p -> c16:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.Binding<T> implements org.turbogwt.mvp.databind.PropertyBinder<T>
-	c3:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
+	c3:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.Binding<T> implements org.turbogwt.mvp.databind.DatabindUiHandler
-	c11:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
+	c15:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.Binding<T> implements org.turbogwt.mvp.databind.Binder
-	c15:p -> c13:p [dir=back,arrowtail=empty,style=dashed];
+	c19:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
 }
 

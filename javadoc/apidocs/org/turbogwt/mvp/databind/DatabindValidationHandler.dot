@@ -11,20 +11,20 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.DatabindView
-	c374 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
+	c423 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindView </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindView.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindValidationHandler
-	c375 [label=<<table title="org.turbogwt.mvp.databind.DatabindValidationHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatabindValidationHandler.html">
+	c424 [label=<<table title="org.turbogwt.mvp.databind.DatabindValidationHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatabindValidationHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindValidationHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindValidationHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.DatabindValidationHandler
-	c375:p -> c374:p [dir=back,arrowtail=empty,style=dashed];
+	c424:p -> c423:p [dir=back,arrowtail=empty,style=dashed];
 }
 

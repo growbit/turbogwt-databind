@@ -11,28 +11,28 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c599 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HasDatabindUiHandler.html">
+	c748 [label=<<table title="org.turbogwt.mvp.databind.HasDatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HasDatabindUiHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HasDatabindUiHandler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HasDatabindUiHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindViewEngine
-	c601 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
+	c750 [label=<<table title="org.turbogwt.mvp.databind.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DatabindViewEngine </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindViewEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.DatabindView
-	c602 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
+	c753 [label=<<table title="org.turbogwt.mvp.databind.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindView </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatabindView.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.DatabindViewEngine implements org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c599:p -> c601:p [dir=back,arrowtail=empty,style=dashed];
+	c748:p -> c750:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.DatabindView implements org.turbogwt.mvp.databind.HasDatabindUiHandler
-	c599:p -> c602:p [dir=back,arrowtail=empty,style=dashed];
+	c748:p -> c753:p [dir=back,arrowtail=empty,style=dashed];
 }
 
