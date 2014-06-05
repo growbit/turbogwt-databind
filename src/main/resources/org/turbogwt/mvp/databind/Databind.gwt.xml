@@ -4,5 +4,5 @@
     <inherits name="com.google.gwt.user.User"/>
     <inherits name="org.turbogwt.core.Core"/>
 
-    <source path="" excludes="**/*Test.java,**/*TestCase.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
+    <source path="client" excludes="**/*Test.java,**/*TestCase.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
 </module>

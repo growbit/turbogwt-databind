@@ -18,8 +18,10 @@ package org.turbogwt.mvp.databind;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
-import org.turbogwt.mvp.databind.validation.EmailValidatorTest;
-import org.turbogwt.mvp.databind.validation.RequiredValidatorTest;
+import org.turbogwt.mvp.databind.client.BindingTest;
+import org.turbogwt.mvp.databind.client.DatabindViewEngineTest;
+import org.turbogwt.mvp.databind.client.validation.EmailValidatorTest;
+import org.turbogwt.mvp.databind.client.validation.RequiredValidatorTest;
 
 /**
  * @author Danilo Reinert

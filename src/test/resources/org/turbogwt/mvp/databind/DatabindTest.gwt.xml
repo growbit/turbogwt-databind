@@ -4,5 +4,5 @@
     <inherits name="com.google.gwt.user.User"/>
     <inherits name="org.turbogwt.core.Core"/>
 
-    <source path=""/>
+    <source path="client"/>
 </module>
