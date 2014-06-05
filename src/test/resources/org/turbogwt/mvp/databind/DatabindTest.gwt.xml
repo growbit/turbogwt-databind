@@ -5,4 +5,5 @@
     <inherits name="org.turbogwt.core.Core"/>
 
     <source path="client"/>
+    <source path="test"/>
 </module>

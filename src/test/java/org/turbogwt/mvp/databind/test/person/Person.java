@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.turbogwt.mvp.databind.client.person;
+package org.turbogwt.mvp.databind.test.person;
 
 import java.util.Date;
 
