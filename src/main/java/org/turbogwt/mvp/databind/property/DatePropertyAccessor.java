@@ -17,7 +17,7 @@ package org.turbogwt.mvp.databind.property;
 
 import java.util.Date;
 
-import org.turbogwt.core.util.ProvidesDate;
+import org.turbogwt.core.util.shared.ProvidesDate;
 
 /**
  * @param <T> Model type

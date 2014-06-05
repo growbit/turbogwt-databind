@@ -20,8 +20,8 @@ import com.google.gwt.core.shared.GWT;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.turbogwt.core.js.collections.JsFastMap;
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.collections.client.LightMap;
+import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.format.Formatter;
 import org.turbogwt.mvp.databind.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.property.PropertyAccessor;
@@ -36,7 +36,7 @@ import org.turbogwt.mvp.databind.validation.Validator;
 @SuppressWarnings("unchecked")
 public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
 
-    public static class PropertyBindingMap extends JsFastMap<PropertyBinding> { }
+    public static class PropertyBindingMap extends LightMap<PropertyBinding> { }
 
     public static class PropertyBinding {
 

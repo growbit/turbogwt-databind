@@ -24,8 +24,8 @@ import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import java.util.Map;
 
-import org.turbogwt.core.js.collections.JsFastMap;
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.collections.client.LightMap;
+import org.turbogwt.core.util.shared.Registration;
 
 /**
  * This class should be used by any {@link DatabindView} as a delegatee.
@@ -40,7 +40,7 @@ import org.turbogwt.core.util.Registration;
 @SuppressWarnings("unchecked")
 public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasDatabindUiHandler {
 
-    public static class WidgetBindingMap extends JsFastMap<WidgetBinding> { }
+    public static class WidgetBindingMap extends LightMap<WidgetBinding> { }
 
     public static class WidgetBinding {
 

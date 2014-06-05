@@ -15,7 +15,7 @@
  */
 package org.turbogwt.mvp.databind;
 
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.format.Formatter;
 import org.turbogwt.mvp.databind.property.PropertyAccessor;
 import org.turbogwt.mvp.databind.validation.Validator;

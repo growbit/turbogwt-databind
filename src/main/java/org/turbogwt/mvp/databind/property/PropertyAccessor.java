@@ -17,7 +17,7 @@ package org.turbogwt.mvp.databind.property;
 
 import javax.annotation.Nullable;
 
-import org.turbogwt.core.util.ProvidesValue;
+import org.turbogwt.core.util.shared.ProvidesValue;
 
 /**
  * This interface is meant to provide access to some property of an object. Simply, it should call the getter and setter

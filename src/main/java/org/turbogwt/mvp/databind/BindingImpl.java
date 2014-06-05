@@ -17,7 +17,7 @@ package org.turbogwt.mvp.databind;
 
 import java.util.Iterator;
 
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.format.Formatter;
 import org.turbogwt.mvp.databind.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.property.PropertyAccessor;

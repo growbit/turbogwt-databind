@@ -17,10 +17,10 @@ package org.turbogwt.mvp.databind;
 
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.util.shared.Registration;
 
 /**
- * A default HandlerRegistrarion implementation to be used by {@link Binder}s.
+ * A default Registration to be used by {@link Binder}s.
  *
  * @author Danilo Reinert
  */

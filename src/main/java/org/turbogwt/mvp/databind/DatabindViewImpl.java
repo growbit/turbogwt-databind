@@ -22,7 +22,7 @@ import com.google.gwt.user.client.ui.HasValue;
 
 import javax.annotation.Nullable;
 
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.validation.ValidationMessage;
 
 /**

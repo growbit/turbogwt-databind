@@ -18,7 +18,7 @@ package org.turbogwt.mvp.databind.mock;
 import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 
-import org.turbogwt.core.util.Registration;
+import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.DatabindUiHandler;
 import org.turbogwt.mvp.databind.DatabindView;
 import org.turbogwt.mvp.databind.DatabindViewEngine;

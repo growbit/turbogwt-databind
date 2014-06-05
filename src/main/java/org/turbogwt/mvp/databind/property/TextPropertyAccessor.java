@@ -15,7 +15,7 @@
  */
 package org.turbogwt.mvp.databind.property;
 
-import org.turbogwt.core.util.ProvidesText;
+import org.turbogwt.core.util.shared.ProvidesText;
 
 /**
  * @param <T> Model type
