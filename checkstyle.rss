@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2014</copyright>
     <item>
-      <title>File: 46,
+      <title>File: 47,
              Errors: 0,
-             Warnings: 2,
-             Infos: 6
+             Warnings: 3,
+             Infos: 7
       </title>
             <link>http://turbogwt.org/checkstyle.html</link>
       <description>
@@ -46,6 +46,20 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingViewImpl.java">org/turbogwt/mvp/databind/client/BindingViewImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.Binder.java">org/turbogwt/mvp/databind/client/Binder.java</a>
                 </td>
                 <td>
@@ -61,6 +75,20 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.mock.TakesValueMock.java">org/turbogwt/mvp/databind/client/mock/TakesValueMock.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasBindingValues.java">org/turbogwt/mvp/databind/client/HasBindingValues.java</a>
                 </td>
                 <td>
                   0
@@ -102,34 +130,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindViewImpl.java">org/turbogwt/mvp/databind/client/DatabindViewImpl.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasDatabindValues.java">org/turbogwt/mvp/databind/client/HasDatabindValues.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.format.ReadFormatter.java">org/turbogwt/mvp/databind/client/format/ReadFormatter.java</a>
                 </td>
                 <td>
@@ -144,35 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindValidationHandler.java">org/turbogwt/mvp/databind/client/DatabindValidationHandler.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.BooleanPropertyAccessor.java">org/turbogwt/mvp/databind/client/property/BooleanPropertyAccessor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasDatabindUiHandler.java">org/turbogwt/mvp/databind/client/HasDatabindUiHandler.java</a>
                 </td>
                 <td>
                   0
@@ -243,6 +215,34 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.WidgetBindingStrategy.java">org/turbogwt/mvp/databind/client/WidgetBindingStrategy.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.ViewEngine.java">org/turbogwt/mvp/databind/client/ViewEngine.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingValidationHandler.java">org/turbogwt/mvp/databind/client/BindingValidationHandler.java</a>
                 </td>
                 <td>
                   0
@@ -354,6 +354,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.HasBindingHandler.java">org/turbogwt/mvp/databind/client/HasBindingHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.test.person.PersonProperties.java">org/turbogwt/mvp/databind/test/person/PersonProperties.java</a>
                 </td>
                 <td>
@@ -375,6 +389,34 @@ under the License.
                 </td>
                 <td>
                   0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingView.java">org/turbogwt/mvp/databind/client/BindingView.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.MistypedBindingException.java">org/turbogwt/mvp/databind/client/MistypedBindingException.java</a>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
                 </td>
                 <td>
                   0
@@ -522,7 +564,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.DatePropertyAccessor.java">org/turbogwt/mvp/databind/client/property/DatePropertyAccessor.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BindingHandler.java">org/turbogwt/mvp/databind/client/BindingHandler.java</a>
                 </td>
                 <td>
                   0
@@ -536,7 +578,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindUiHandler.java">org/turbogwt/mvp/databind/client/DatabindUiHandler.java</a>
+                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.property.DatePropertyAccessor.java">org/turbogwt/mvp/databind/client/property/DatePropertyAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -649,34 +691,6 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.BinderRegistration.java">org/turbogwt/mvp/databind/client/BinderRegistration.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindViewEngine.java">org/turbogwt/mvp/databind/client/DatabindViewEngine.java</a>
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://turbogwt.org/checkstyle.html#org.turbogwt.mvp.databind.client.DatabindView.java">org/turbogwt/mvp/databind/client/DatabindView.java</a>
                 </td>
                 <td>
                   0

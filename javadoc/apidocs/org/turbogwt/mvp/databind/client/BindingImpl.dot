@@ -11,19 +11,19 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.BindingImpl<T>
-	c317 [label=<<table title="org.turbogwt.mvp.databind.client.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BindingImpl.html">
+	c362 [label=<<table title="org.turbogwt.mvp.databind.client.BindingImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BindingImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BindingImpl&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BindingImpl.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binding<T>
-	c318 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
+	c364 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.BindingImpl<T> implements org.turbogwt.mvp.databind.client.Binding<T>
-	c318:p -> c317:p [dir=back,arrowtail=empty,style=dashed];
+	c364:p -> c362:p [dir=back,arrowtail=empty,style=dashed];
 }
 

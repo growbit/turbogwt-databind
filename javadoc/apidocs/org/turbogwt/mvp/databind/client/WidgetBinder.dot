@@ -11,37 +11,37 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.WidgetBinder
-	c1432 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WidgetBinder.html">
+	c1509 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WidgetBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WidgetBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WidgetBinder.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.DatabindViewEngine
-	c1441 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindViewEngine.html">
+	// org.turbogwt.mvp.databind.client.ViewEngine
+	c1510 [label=<<table title="org.turbogwt.mvp.databind.client.ViewEngine" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ViewEngine.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> DatabindViewEngine </td></tr>
+<tr><td align="center" balign="center"> ViewEngine </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatabindViewEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
-	// org.turbogwt.mvp.databind.client.DatabindView
-	c1444 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DatabindView.html">
+		</table>>, URL="./ViewEngine.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.BindingView
+	c1522 [label=<<table title="org.turbogwt.mvp.databind.client.BindingView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BindingView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> DatabindView </td></tr>
+<tr><td align="center" balign="center"> BindingView </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatabindView.html", fontname="arial", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./BindingView.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Binder
-	c1450 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
+	c1528 [label=<<table title="org.turbogwt.mvp.databind.client.Binder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Binder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Binder.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.WidgetBinder implements org.turbogwt.mvp.databind.client.Binder
-	c1450:p -> c1432:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.DatabindViewEngine implements org.turbogwt.mvp.databind.client.WidgetBinder
-	c1432:p -> c1441:p [dir=back,arrowtail=empty,style=dashed];
-	//org.turbogwt.mvp.databind.client.DatabindView implements org.turbogwt.mvp.databind.client.WidgetBinder
-	c1432:p -> c1444:p [dir=back,arrowtail=empty,style=dashed];
+	c1528:p -> c1509:p [dir=back,arrowtail=empty,style=dashed];
+	//org.turbogwt.mvp.databind.client.ViewEngine implements org.turbogwt.mvp.databind.client.WidgetBinder
+	c1509:p -> c1510:p [dir=back,arrowtail=empty,style=dashed];
+	//org.turbogwt.mvp.databind.client.BindingView implements org.turbogwt.mvp.databind.client.WidgetBinder
+	c1509:p -> c1522:p [dir=back,arrowtail=empty,style=dashed];
 }
 

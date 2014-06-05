@@ -11,20 +11,20 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.WidgetBindingStrategy
-	c1104 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBindingStrategy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WidgetBindingStrategy.html">
+	c1061 [label=<<table title="org.turbogwt.mvp.databind.client.WidgetBindingStrategy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WidgetBindingStrategy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WidgetBindingStrategy </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WidgetBindingStrategy.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.Strategy
-	c1106 [label=<<table title="org.turbogwt.mvp.databind.client.Strategy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Strategy.html">
+	c1066 [label=<<table title="org.turbogwt.mvp.databind.client.Strategy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Strategy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> Strategy </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Strategy.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.Strategy implements org.turbogwt.mvp.databind.client.WidgetBindingStrategy
-	c1104:p -> c1106:p [dir=back,arrowtail=empty,style=dashed];
+	c1061:p -> c1066:p [dir=back,arrowtail=empty,style=dashed];
 }
 

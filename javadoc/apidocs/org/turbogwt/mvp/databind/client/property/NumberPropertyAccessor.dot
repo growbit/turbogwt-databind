@@ -11,25 +11,25 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c836 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c785 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor<T>
-	c837 [label=<<table title="org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NumberPropertyAccessor.html">
+	c786 [label=<<table title="org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NumberPropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> NumberPropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NumberPropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c836:p -> c837:p [dir=back,arrowtail=empty,style=dashed];
+	c785:p -> c786:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor<T> implements org.turbogwt.core.util.shared.ProvidesNumber<T>
-	c848:p -> c837:p [dir=back,arrowtail=empty,style=dashed];
+	c797:p -> c786:p [dir=back,arrowtail=empty,style=dashed];
 	// org.turbogwt.core.util.shared.ProvidesNumber<T>
-	c848 [label=<<table title="org.turbogwt.core.util.shared.ProvidesNumber" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c797 [label=<<table title="org.turbogwt.core.util.shared.ProvidesNumber" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProvidesNumber&lt;T&gt; </td></tr>

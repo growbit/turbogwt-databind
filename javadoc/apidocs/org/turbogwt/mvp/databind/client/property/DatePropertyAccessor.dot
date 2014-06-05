@@ -11,25 +11,25 @@ digraph G {
 	ranksep=0.5;
 	rankdir=LR;
 	// org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c655 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
+	c560 [label=<<table title="org.turbogwt.mvp.databind.client.property.PropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PropertyAccessor&lt;T, F&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T>
-	c657 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatePropertyAccessor.html">
+	c562 [label=<<table title="org.turbogwt.mvp.databind.client.property.DatePropertyAccessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatePropertyAccessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatePropertyAccessor&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatePropertyAccessor.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.mvp.databind.client.property.PropertyAccessor<T, F>
-	c655:p -> c657:p [dir=back,arrowtail=empty,style=dashed];
+	c560:p -> c562:p [dir=back,arrowtail=empty,style=dashed];
 	//org.turbogwt.mvp.databind.client.property.DatePropertyAccessor<T> implements org.turbogwt.core.util.shared.ProvidesDate<T>
-	c667:p -> c657:p [dir=back,arrowtail=empty,style=dashed];
+	c572:p -> c562:p [dir=back,arrowtail=empty,style=dashed];
 	// org.turbogwt.core.util.shared.ProvidesDate<T>
-	c667 [label=<<table title="org.turbogwt.core.util.shared.ProvidesDate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c572 [label=<<table title="org.turbogwt.core.util.shared.ProvidesDate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProvidesDate&lt;T&gt; </td></tr>

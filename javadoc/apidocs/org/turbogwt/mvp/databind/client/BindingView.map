@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./WidgetBinder.html" title="org.turbogwt.mvp.databind.client.WidgetBinder" alt="" coords="49,10,148,54"/>
+<area shape="rect" id="node1" href="./WidgetBinder.html" title="&lt;TABLE&gt;" alt="" coords="39,5,159,59"/>
+<area shape="rect" id="node5_1" href="./BindingView.html" title="org.turbogwt.mvp.databind.client.BindingView" alt="" coords="251,129,343,173"/>
+<area shape="rect" id="node5" href="./BindingView.html" title="&lt;TABLE&gt;" alt="" coords="241,123,354,178"/>
+<area shape="rect" id="node2_2" href="./HasBindingValues.html" title="org.turbogwt.mvp.databind.client.HasBindingValues" alt="" coords="35,89,162,133"/>
+<area shape="rect" id="node2" href="./HasBindingValues.html" title="&lt;TABLE&gt;" alt="" coords="25,83,173,138"/>
+<area shape="rect" id="node3_3" href="./HasBindingHandler.html" title="org.turbogwt.mvp.databind.client.HasBindingHandler" alt="" coords="33,167,164,211"/>
+<area shape="rect" id="node3" href="./HasBindingHandler.html" title="&lt;TABLE&gt;" alt="" coords="23,162,175,217"/>
+<area shape="rect" id="node4_4" href="./BindingViewImpl.html" title="org.turbogwt.mvp.databind.client.BindingViewImpl" alt="" coords="414,137,530,164"/>
+<area shape="rect" id="node4" href="./BindingViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="403,127,541,175"/>
+<area shape="rect" id="node6_5" href="./BindingValidationHandler.html" title="org.turbogwt.mvp.databind.client.BindingValidationHandler" alt="" coords="16,246,181,290"/>
+<area shape="rect" id="node6" href="./BindingValidationHandler.html" title="&lt;TABLE&gt;" alt="" coords="5,241,192,295"/>
+</map>
