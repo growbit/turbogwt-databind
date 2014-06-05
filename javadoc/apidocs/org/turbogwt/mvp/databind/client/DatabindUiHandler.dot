@@ -5,26 +5,26 @@
 #
 
 digraph G {
-	edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
-	node [fontname="Helvetica",fontsize=10,shape=plaintext];
+	edge [fontname="arial",fontsize=10,labelfontname="arial",labelfontsize=10];
+	node [fontname="arial",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
 	rankdir=LR;
-	// org.turbogwt.mvp.databind.client.Binding<T>
-	c333 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Binding.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.turbogwt.mvp.databind.client.DatabindUiHandler
-	c336 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatabindUiHandler.html">
+	c389 [label=<<table title="org.turbogwt.mvp.databind.client.DatabindUiHandler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatabindUiHandler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DatabindUiHandler </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DatabindUiHandler.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./DatabindUiHandler.html", fontname="arial", fontcolor="black", fontsize=10.0];
+	// org.turbogwt.mvp.databind.client.Binding<T>
+	c391 [label=<<table title="org.turbogwt.mvp.databind.client.Binding" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Binding.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> Binding&lt;T&gt; </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Binding.html", fontname="arial", fontcolor="black", fontsize=10.0];
 	//org.turbogwt.mvp.databind.client.Binding<T> implements org.turbogwt.mvp.databind.client.DatabindUiHandler
-	c336:p -> c333:p [dir=back,arrowtail=empty,style=dashed];
+	c389:p -> c391:p [dir=back,arrowtail=empty,style=dashed];
 }
 

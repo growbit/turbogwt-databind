@@ -1,4 +1,4 @@
-org.turbogwt.mvp.databind
-org.turbogwt.mvp.databind.format
-org.turbogwt.mvp.databind.property
-org.turbogwt.mvp.databind.validation
+org.turbogwt.mvp.databind.client
+org.turbogwt.mvp.databind.client.format
+org.turbogwt.mvp.databind.client.property
+org.turbogwt.mvp.databind.client.validation
