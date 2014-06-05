@@ -112,7 +112,11 @@ public class BindingImpl<T> implements Binding<T> {
     public boolean flush() {
         boolean isValid = true;
         for (String id : engine) {
-            isValid = doFlush(id);
+            try {
+                isValid = doFlush(id);
+            } catch (ClassCastException e) {
+                throwMistypedBindingException(id, e);
+            }
         }
         return isValid;
     }
@@ -127,7 +131,11 @@ public class BindingImpl<T> implements Binding<T> {
     @Override
     public boolean flush(String id) {
         if (engine.hasProperty(id)) {
-            return doFlush(id);
+            try {
+                return doFlush(id);
+            } catch (ClassCastException e) {
+                throwMistypedBindingException(id, e);
+            }
         } // Id not bound, then the value was not invalid
         return true;
     }
@@ -236,7 +244,11 @@ public class BindingImpl<T> implements Binding<T> {
      */
     @Override
     public void onValueChanged(String id, Object value) {
-        setValueToModel(id, value);
+        try {
+            setValueToModel(id, value);
+        } catch (ClassCastException e) {
+            throwMistypedBindingException(id, e);
+        }
     }
 
     /**
@@ -245,7 +257,11 @@ public class BindingImpl<T> implements Binding<T> {
     @Override
     public void refresh() {
         for (String id : engine) {
-            setValueToView(id);
+            try {
+                setValueToView(id);
+            } catch (ClassCastException e) {
+                throwMistypedBindingException(id, e);
+            }
         }
     }
 
@@ -257,7 +273,11 @@ public class BindingImpl<T> implements Binding<T> {
     @Override
     public void refresh(String id) {
         if (engine.hasProperty(id)) {
-            setValueToView(id);
+            try {
+                setValueToView(id);
+            } catch (ClassCastException e) {
+                throwMistypedBindingException(id, e);
+            }
         }
     }
 
@@ -268,7 +288,11 @@ public class BindingImpl<T> implements Binding<T> {
     public void refreshAutoOnly() {
         for (String id : engine) {
             if (engine.isAutoRefresh(id)) {
-                setValueToView(id);
+                try {
+                    setValueToView(id);
+                } catch (ClassCastException e) {
+                    throwMistypedBindingException(id, e);
+                }
             }
         }
     }
@@ -356,7 +380,6 @@ public class BindingImpl<T> implements Binding<T> {
      *
      * @return {@code true} if the value was validated and applied, {@code false} otherwise
      */
-    @SuppressWarnings("unchecked")
     private boolean setValueToModel(String id, Object value) {
         if (model == null) {
             return false;
@@ -384,5 +407,11 @@ public class BindingImpl<T> implements Binding<T> {
             // If there is no model then send null to all properties
             view.setValue(id, null);
         }
+    }
+
+    private void throwMistypedBindingException(String id, ClassCastException e) {
+        throw new MistypedBindingException("The binding of \"" + id + "\" is improperly set."
+                + " The types of both sides of the binding (view and model) do not match."
+                + " You should conform your widget value type to your property type", e);
     }
 }
