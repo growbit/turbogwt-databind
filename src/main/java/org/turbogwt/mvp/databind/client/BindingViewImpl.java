@@ -26,16 +26,16 @@ import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
 
 /**
- * {@link DatabindView} default implementation.
- * It is simply a {@link com.google.gwt.user.client.ui.Composite} supporting databinding.
- *
+ * {@link BindingView} default implementation.
+ * It is simply a {@link com.google.gwt.user.client.ui.Composite} supporting databind.
+ * <p/>
  * You may extend it to build your views.
  *
  * @author Danilo Reinert
  */
-public abstract class DatabindViewImpl extends Composite implements DatabindView {
+public abstract class BindingViewImpl extends Composite implements BindingView {
 
-    private final DatabindViewEngine engine = new DatabindViewEngine();
+    private final ViewEngine engine = new ViewEngine();
 
     @Override
     public <F> F getValue(String id) {
@@ -68,8 +68,8 @@ public abstract class DatabindViewImpl extends Composite implements DatabindView
     }
 
     @Override
-    public void setDatabindUiHandler(DatabindUiHandler uiHandlers) {
-        engine.setDatabindUiHandler(uiHandlers);
+    public void setBindingHandler(BindingHandler uiHandlers) {
+        engine.setBindingHandler(uiHandlers);
     }
 
     @Override

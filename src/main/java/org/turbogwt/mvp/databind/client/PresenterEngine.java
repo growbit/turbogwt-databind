@@ -29,6 +29,8 @@ import org.turbogwt.mvp.databind.client.validation.Validation;
 import org.turbogwt.mvp.databind.client.validation.Validator;
 
 /**
+ * It is responsible for managing the binding on the Presenter side.
+ *
  * @param <T> Model type
  *
  * @author Danilo Reinert

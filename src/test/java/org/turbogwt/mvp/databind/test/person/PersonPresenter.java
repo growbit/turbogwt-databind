@@ -19,7 +19,7 @@ import com.google.gwt.user.client.ui.IsWidget;
 
 import org.turbogwt.mvp.databind.client.Binding;
 import org.turbogwt.mvp.databind.client.BindingImpl;
-import org.turbogwt.mvp.databind.client.DatabindView;
+import org.turbogwt.mvp.databind.client.BindingView;
 
 /**
  * Presenter of an editing view of Person.
@@ -31,7 +31,7 @@ public class PersonPresenter {
     /**
      * Editing view of Person.
      */
-    interface PersonView extends DatabindView, IsWidget { }
+    interface PersonView extends BindingView, IsWidget { }
 
     private final Binding<Person> binding;
 

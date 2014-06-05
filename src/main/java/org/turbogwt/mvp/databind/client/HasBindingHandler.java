@@ -16,14 +16,11 @@
 package org.turbogwt.mvp.databind.client;
 
 /**
- * An object that implements this interface should be a widget with values mapped by String keys, named ids. These ids
- * are useful for identifying source properties in Presenters with databind support.
+ * Represents a class that holds a handler of binding.
  *
  * @author Danilo Reinert
  */
-public interface HasDatabindValues {
+public interface HasBindingHandler {
 
-    <F> F getValue(String id);
-
-    <F> void setValue(String id, F value);
+    void setBindingHandler(BindingHandler handler);
 }

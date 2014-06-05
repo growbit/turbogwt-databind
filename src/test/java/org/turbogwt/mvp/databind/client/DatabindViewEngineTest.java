@@ -32,14 +32,14 @@ import org.turbogwt.mvp.databind.client.mock.HasValueMock;
 public class DatabindViewEngineTest extends TestCase {
 
     interface BindWidgetCallback {
-        HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget);
+        HandlerRegistration bind(ViewEngine engine, String propertyId, IsWidget widget);
     }
 
     @Override
     protected void setUp() throws Exception {
         super.setUp();
         GwtMockito.initMocks(this);
-        GwtMockito.useProviderForType(DatabindViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
+        GwtMockito.useProviderForType(ViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
             @Override
             public Object getFake(Class<?> type) {
                 return new WidgetBindingMapForTest();
@@ -51,7 +51,7 @@ public class DatabindViewEngineTest extends TestCase {
         doTestBindWidget(new BindWidgetCallback() {
             @Override
             @SuppressWarnings("unchecked")
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+            public HandlerRegistration bind(ViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (TakesValue<Object>) widget);
             }
         });
@@ -60,7 +60,7 @@ public class DatabindViewEngineTest extends TestCase {
     public void testBindWidget() {
         doTestBindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+            public HandlerRegistration bind(ViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (HasValue<?>) widget, Strategy.ON_CHANGE);
             }
         });
@@ -70,7 +70,7 @@ public class DatabindViewEngineTest extends TestCase {
         doTestUnbindWidget(new BindWidgetCallback() {
             @Override
             @SuppressWarnings("unchecked")
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+            public HandlerRegistration bind(ViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (TakesValue<Object>) widget);
             }
         });
@@ -79,7 +79,7 @@ public class DatabindViewEngineTest extends TestCase {
     public void testUnbindWidget() {
         doTestUnbindWidget(new BindWidgetCallback() {
             @Override
-            public HandlerRegistration bind(DatabindViewEngine engine, String propertyId, IsWidget widget) {
+            public HandlerRegistration bind(ViewEngine engine, String propertyId, IsWidget widget) {
                 return engine.bind(propertyId, (HasValue<?>) widget, Strategy.ON_CHANGE);
             }
         });
@@ -89,7 +89,7 @@ public class DatabindViewEngineTest extends TestCase {
         /*
         The binding must be tested performing both #DatabindViewEngine.getValue and #DatabindViewEngine.setValue.
          */
-        final DatabindViewEngine engine = new DatabindViewEngine();
+        final ViewEngine engine = new ViewEngine();
 
         final String propertyId = "someProperty";
         final String initialValue = "initialValue";
@@ -116,7 +116,7 @@ public class DatabindViewEngineTest extends TestCase {
         /*
         The unbinding must be tested performing both #DatabindViewEngine.unbind and #HandlerRegistration.removeHandler.
          */
-        final DatabindViewEngine engine = new DatabindViewEngine();
+        final ViewEngine engine = new ViewEngine();
 
         final String someProperty = "someProperty";
         final String somePropertyInitialValue = "initialValue";

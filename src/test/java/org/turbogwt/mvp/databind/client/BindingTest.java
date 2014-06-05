@@ -56,7 +56,7 @@ public class BindingTest extends TestCase {
                 return new PropertyBindingMapForTest();
             }
         });
-        GwtMockito.useProviderForType(DatabindViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
+        GwtMockito.useProviderForType(ViewEngine.WidgetBindingMap.class, new FakeProvider<Object>() {
             @Override
             public Object getFake(Class<?> type) {
                 return new WidgetBindingMapForTest();
@@ -78,7 +78,7 @@ public class BindingTest extends TestCase {
         //===================================================================
 
         // Create view
-        final DatabindView mockView = new DatabindViewMock();
+        final BindingView mockView = new DatabindViewMock();
 
         // Create widgets
         final HasValue<String> stringWidget = new HasValueMock<String>();
@@ -187,7 +187,7 @@ public class BindingTest extends TestCase {
         //===================================================================
 
         // Create view
-        final DatabindView mockView = new DatabindViewMock();
+        final BindingView mockView = new DatabindViewMock();
 
         // Create widgets
         final HasValue<Double> doubleWidget = new HasValueMock<Double>();

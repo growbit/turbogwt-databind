@@ -17,11 +17,11 @@ package org.turbogwt.mvp.databind.client;
 
 /**
  * Interface that must be implemented by the View to support databind.
- *
- * Usually you will delegate all possible executions to {@link DatabindViewEngine}.
+ * <p/>
+ * Usually you will delegate all possible executions to {@link ViewEngine}.
  *
  * @author Danilo Reinert
  */
-public interface DatabindView extends HasDatabindUiHandler, HasDatabindValues,
-        WidgetBinder, DatabindValidationHandler {
+public interface BindingView extends HasBindingHandler, HasBindingValues,
+        WidgetBinder, BindingValidationHandler {
 }

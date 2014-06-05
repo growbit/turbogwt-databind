@@ -21,6 +21,8 @@ import com.google.gwt.user.client.ui.HasValue;
 import org.turbogwt.core.util.shared.Registration;
 
 /**
+ * Represents a class capable of binding widgets.
+ *
  * @author Danilo Reinert
  */
 public interface WidgetBinder extends Binder {

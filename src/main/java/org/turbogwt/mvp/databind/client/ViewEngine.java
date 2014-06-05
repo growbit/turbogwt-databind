@@ -28,17 +28,19 @@ import org.turbogwt.core.collections.client.LightMap;
 import org.turbogwt.core.util.shared.Registration;
 
 /**
- * This class should be used by any {@link DatabindView} as a delegatee.
- *
- * You can even create an abstract view implementing {@link DatabindView} and delegating the properly methods to this
+ * It is responsible for managing the binding on the View side.
+ * <p/>
+ * This class should be used by any {@link BindingView} as a delegatee.
+ * <p/>
+ * You can even create an abstract view implementing {@link BindingView} and delegating the properly methods to this
  * engine. Then all your views supporting databinding could extend from this one.
  *
- * @see DatabindViewImpl
+ * @see BindingViewImpl
  *
  * @author Danilo Reinert
  */
 @SuppressWarnings("unchecked")
-public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasDatabindUiHandler {
+public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHandler {
 
     public static class WidgetBindingMap extends LightMap<WidgetBinding> { }
 
@@ -60,7 +62,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
     }
 
     private final Map<String, WidgetBinding> bindings = GWT.create(WidgetBindingMap.class);
-    private DatabindUiHandler uiHandler;
+    private BindingHandler uiHandler;
 
     @Override
     public <F> F getValue(String id) {
@@ -86,7 +88,7 @@ public class DatabindViewEngine implements WidgetBinder, HasDatabindValues, HasD
     }
 
     @Override
-    public void setDatabindUiHandler(DatabindUiHandler uiHandler) {
+    public void setBindingHandler(BindingHandler uiHandler) {
         this.uiHandler = uiHandler;
     }
 

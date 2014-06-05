@@ -21,7 +21,7 @@ import com.google.gwt.user.datepicker.client.DateBox;
 
 import javax.annotation.Nullable;
 
-import org.turbogwt.mvp.databind.client.DatabindViewImpl;
+import org.turbogwt.mvp.databind.client.BindingViewImpl;
 import org.turbogwt.mvp.databind.client.Strategy;
 import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
 
@@ -30,7 +30,7 @@ import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
  *
  * @author Danilo Reinert
  */
-public class PersonViewImpl extends DatabindViewImpl implements PersonPresenter.PersonView {
+public class PersonViewImpl extends BindingViewImpl implements PersonPresenter.PersonView {
 
     final TextBox name = new TextBox();
     final DateBox birthday = new DateBox();

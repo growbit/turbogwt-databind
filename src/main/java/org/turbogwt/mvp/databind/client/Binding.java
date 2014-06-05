@@ -28,7 +28,7 @@ import org.turbogwt.mvp.databind.client.validation.Validator;
  *
  * @author Danilo Reinert
  */
-public interface Binding<T> extends PropertyBinder<T>, DatabindUiHandler, Iterable<String>, Binder {
+public interface Binding<T> extends PropertyBinder<T>, BindingHandler, Iterable<String>, Binder {
 
     /**
      * Get all values from view, apply to the model and return if all of them were valid.
@@ -85,7 +85,7 @@ public interface Binding<T> extends PropertyBinder<T>, DatabindUiHandler, Iterab
      *
      * @return the bound view
      */
-    DatabindView getView();
+    BindingView getView();
 
     /**
      * Returns {@code true} if this binding has a property accessor bound to this property id.

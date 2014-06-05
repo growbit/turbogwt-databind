@@ -19,18 +19,18 @@ import com.google.gwt.user.client.TakesValue;
 import com.google.gwt.user.client.ui.HasValue;
 
 import org.turbogwt.core.util.shared.Registration;
-import org.turbogwt.mvp.databind.client.DatabindUiHandler;
-import org.turbogwt.mvp.databind.client.DatabindView;
-import org.turbogwt.mvp.databind.client.DatabindViewEngine;
+import org.turbogwt.mvp.databind.client.BindingHandler;
+import org.turbogwt.mvp.databind.client.BindingView;
 import org.turbogwt.mvp.databind.client.Strategy;
+import org.turbogwt.mvp.databind.client.ViewEngine;
 import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
 
 /**
  * @author Danilo Reinert
  */
-public class DatabindViewMock implements DatabindView {
+public class DatabindViewMock implements BindingView {
 
-    private final DatabindViewEngine engine = new DatabindViewEngine();
+    private final ViewEngine engine = new ViewEngine();
 
     @Override
     public <F> Registration bind(String id, HasValue<F> widget, Strategy strategy) {
@@ -56,8 +56,8 @@ public class DatabindViewMock implements DatabindView {
     }
 
     @Override
-    public void setDatabindUiHandler(DatabindUiHandler uiHandlers) {
-        engine.setDatabindUiHandler(uiHandlers);
+    public void setBindingHandler(BindingHandler uiHandlers) {
+        engine.setBindingHandler(uiHandlers);
     }
 
     @Override

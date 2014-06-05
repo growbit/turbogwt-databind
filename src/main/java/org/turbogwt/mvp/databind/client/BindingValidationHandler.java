@@ -24,7 +24,7 @@ import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
  *
  * @author Danilo Reinert
  */
-public interface DatabindValidationHandler {
+public interface BindingValidationHandler {
 
     /**
      * Notify the view of a invalid try to update a property on the model.

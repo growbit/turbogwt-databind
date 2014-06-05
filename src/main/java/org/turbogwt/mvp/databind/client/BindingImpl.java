@@ -35,25 +35,25 @@ import org.turbogwt.mvp.databind.client.validation.Validator;
 public class BindingImpl<T> implements Binding<T> {
 
     private final PresenterEngine<T> engine = new PresenterEngine<>();
-    private final DatabindView view;
+    private final BindingView view;
     private T model;
 
     @SuppressWarnings("unchecked")
-    public BindingImpl(DatabindView view) {
+    public BindingImpl(BindingView view) {
         if (view == null) {
             throw new NullPointerException("The parameter _view_ cannot be null");
         }
         this.view = view;
-        this.view.setDatabindUiHandler(this);
+        this.view.setBindingHandler(this);
     }
 
     @SuppressWarnings("unchecked")
-    public BindingImpl(DatabindView view, DatabindUiHandler uiHandlers) {
+    public BindingImpl(BindingView view, BindingHandler uiHandlers) {
         if (view == null) {
             throw new NullPointerException("The parameter _view_ cannot be null");
         }
         this.view = view;
-        this.view.setDatabindUiHandler(uiHandlers);
+        this.view.setBindingHandler(uiHandlers);
     }
 
     @Override
@@ -195,7 +195,7 @@ public class BindingImpl<T> implements Binding<T> {
      * @return the bound view
      */
     @Override
-    public DatabindView getView() {
+    public BindingView getView() {
         return view;
     }
 
