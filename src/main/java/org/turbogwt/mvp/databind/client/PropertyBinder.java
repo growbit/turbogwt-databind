@@ -17,7 +17,7 @@ package org.turbogwt.mvp.databind.client;
 
 import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.client.format.Formatter;
-import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
+import org.turbogwt.mvp.databind.client.property.Accessor;
 import org.turbogwt.mvp.databind.client.validation.Validator;
 
 /**
@@ -29,24 +29,24 @@ import org.turbogwt.mvp.databind.client.validation.Validator;
  */
 public interface PropertyBinder<T> extends Binder {
 
-    <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor);
+    <F> Registration bind(String id, Accessor<T, F> propertyAccessor);
 
-    <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+    <F> Registration bind(String id, Accessor<T, F> propertyAccessor,
                           Validator<T, F> validatesValue);
 
-    <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+    <F> Registration bind(String id, Accessor<T, F> propertyAccessor,
                           Validator<T, F> validatesValue, Formatter<F, ?> formatter);
 
-    <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor, Formatter<F, ?> formatter);
+    <F> Registration bind(String id, Accessor<T, F> propertyAccessor, Formatter<F, ?> formatter);
 
-    <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor);
+    <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor);
 
-    <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                           Validator<T, F> validatesValue);
 
-    <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                           Validator<T, F> validatesValue, Formatter<F, ?> formatter);
 
-    <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                           Formatter<F, ?> formatter);
 }

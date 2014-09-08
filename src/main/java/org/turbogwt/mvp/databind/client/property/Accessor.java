@@ -31,7 +31,7 @@ import org.turbogwt.core.util.shared.ProvidesValue;
  * @author Danilo Reinert
  * @see <a href="http://martinfowler.com/bliki/InversionOfControl.html">InversionOfControl</a>
  */
-public interface PropertyAccessor<T, F> extends ProvidesValue<T, F> {
+public interface Accessor<T, F> extends ProvidesValue<T, F> {
 
     /**
      * Sets the given value to the object. The property is known at compile time.

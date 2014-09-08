@@ -15,12 +15,12 @@
  */
 package org.turbogwt.mvp.databind.client.property;
 
-import org.turbogwt.core.util.shared.ProvidesNumber;
+import org.turbogwt.core.util.shared.ProvidesText;
 
 /**
  * @param <T> Model type
  *
  * @author Danilo Reinert
  */
-public interface NumberPropertyAccessor<T> extends PropertyAccessor<T, Number>, ProvidesNumber<T> {
+public interface TextAccessor<T> extends Accessor<T, String>, ProvidesText<T> {
 }

@@ -17,7 +17,7 @@ package org.turbogwt.mvp.databind.client;
 
 import java.util.Iterator;
 
-import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
+import org.turbogwt.mvp.databind.client.property.Accessor;
 import org.turbogwt.mvp.databind.client.validation.Validator;
 
 /**
@@ -60,7 +60,7 @@ public interface Binding<T> extends PropertyBinder<T>, BindingHandler, Iterable<
      *
      * @return property accessor
      */
-    <V> PropertyAccessor<T, V> getPropertyAccessor(String id);
+    <V> Accessor<T, V> getPropertyAccessor(String id);
 
     /**
      * Get validator from specified property.

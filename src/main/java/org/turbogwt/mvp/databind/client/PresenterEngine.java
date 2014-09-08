@@ -24,7 +24,7 @@ import org.turbogwt.core.collections.client.LightMap;
 import org.turbogwt.core.util.shared.Registration;
 import org.turbogwt.mvp.databind.client.format.Formatter;
 import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
-import org.turbogwt.mvp.databind.client.property.PropertyAccessor;
+import org.turbogwt.mvp.databind.client.property.Accessor;
 import org.turbogwt.mvp.databind.client.validation.Validation;
 import org.turbogwt.mvp.databind.client.validation.Validator;
 
@@ -42,14 +42,14 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
 
     public static class PropertyBinding {
 
-        PropertyAccessor propertyAccessor;
+        Accessor propertyAccessor;
         Validator validator;
         Formatter formatter;
         boolean autoRefresh;
         // TODO: Add readOnly flag?
         // The readOnly flag would not allow receiving values from View.
 
-        PropertyBinding(boolean autoRefresh, PropertyAccessor propertyAccessor, Validator validator,
+        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Validator validator,
                         Formatter formatter) {
             this.propertyAccessor = propertyAccessor;
             this.validator = validator;
@@ -57,60 +57,60 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
             this.autoRefresh = autoRefresh;
         }
 
-        PropertyBinding(boolean autoRefresh, PropertyAccessor propertyAccessor) {
+        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor) {
             this(autoRefresh, propertyAccessor, null, null);
         }
 
-        PropertyBinding(boolean autoRefresh, PropertyAccessor propertyAccessor, Formatter formatter) {
+        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Formatter formatter) {
             this(autoRefresh, propertyAccessor, null, formatter);
         }
 
-        PropertyBinding(boolean autoRefresh, PropertyAccessor propertyAccessor, Validator validator) {
+        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Validator validator) {
             this(autoRefresh, propertyAccessor, validator, null);
         }
     }
 
     private final Map<String, PropertyBinding> properties = GWT.create(PropertyBindingMap.class);
 
-    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(String id, Accessor<T, F> propertyAccessor) {
         return bind(true, id, propertyAccessor);
     }
 
-    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(String id, Accessor<T, F> propertyAccessor,
                                  Validator<T, F> validator) {
         return bind(true, id, propertyAccessor, validator);
     }
 
     @Override
-    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(String id, Accessor<T, F> propertyAccessor,
                                  Validator<T, F> validator, Formatter<F, ?> formatter) {
         return bind(true, id, propertyAccessor, validator, formatter);
     }
 
     @Override
-    public <F> Registration bind(String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(String id, Accessor<T, F> propertyAccessor,
                                  Formatter<F, ?> formatter) {
         return bind(true, id, propertyAccessor, formatter);
     }
 
-    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor) {
+    public <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor) {
         return bind(autoRefresh, id, propertyAccessor, null, null);
     }
 
     @Override
-    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                                  Formatter<F, ?> formatter) {
         return bind(autoRefresh, id, propertyAccessor, null, formatter);
     }
 
     @Override
-    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                                  Validator<T, F> validator) {
         return bind(autoRefresh, id, propertyAccessor, validator, null);
     }
 
     @Override
-    public <F> Registration bind(boolean autoRefresh, String id, PropertyAccessor<T, F> propertyAccessor,
+    public <F> Registration bind(boolean autoRefresh, String id, Accessor<T, F> propertyAccessor,
                                  Validator<T, F> validator, Formatter<F, ?> formatter) {
         if (properties.containsKey(id)) {
             PropertyBinding propertyBinding = properties.get(id);
@@ -185,7 +185,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         }
     }
 
-    public PropertyAccessor<T, ?> getPropertyAccessor(String id) {
+    public Accessor<T, ?> getPropertyAccessor(String id) {
         return properties.get(id).propertyAccessor;
     }
 

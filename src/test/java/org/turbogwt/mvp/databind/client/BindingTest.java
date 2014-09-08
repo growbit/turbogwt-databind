@@ -31,9 +31,9 @@ import org.turbogwt.mvp.databind.client.format.UnableToFormatException;
 import org.turbogwt.mvp.databind.client.mock.DatabindViewMock;
 import org.turbogwt.mvp.databind.client.mock.HasValueMock;
 import org.turbogwt.mvp.databind.client.mock.TakesValueMock;
-import org.turbogwt.mvp.databind.client.property.DatePropertyAccessor;
-import org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor;
-import org.turbogwt.mvp.databind.client.property.TextPropertyAccessor;
+import org.turbogwt.mvp.databind.client.property.DateAccessor;
+import org.turbogwt.mvp.databind.client.property.NumberAccessor;
+import org.turbogwt.mvp.databind.client.property.TextAccessor;
 
 /**
  * @author Danilo Reinert
@@ -97,7 +97,7 @@ public class BindingTest extends TestCase {
         final BindingImpl<Model> binding = new BindingImpl<Model>(mockView);
 
         // Bind accessors
-        binding.bind(stringProperty, new TextPropertyAccessor<Model>() {
+        binding.bind(stringProperty, new TextAccessor<Model>() {
             @Nullable
             @Override
             public String getValue(Model model) {
@@ -109,7 +109,7 @@ public class BindingTest extends TestCase {
                 model.stringValue = value;
             }
         });
-        binding.bind(intProperty, new NumberPropertyAccessor<Model>() {
+        binding.bind(intProperty, new NumberAccessor<Model>() {
             @Nullable
             @Override
             public Number getValue(Model model) {
@@ -121,7 +121,7 @@ public class BindingTest extends TestCase {
                 model.intValue = (Integer) value;
             }
         });
-        binding.bind(false, dateProperty, new DatePropertyAccessor<Model>() {
+        binding.bind(false, dateProperty, new DateAccessor<Model>() {
             @Nullable
             @Override
             public Date getValue(Model model) {
@@ -206,7 +206,7 @@ public class BindingTest extends TestCase {
         final BindingImpl<Model> binding = new BindingImpl<Model>(mockView);
 
         // Declare accessors
-        final TextPropertyAccessor<Model> stringPropertyAccessor = new TextPropertyAccessor<Model>() {
+        final TextAccessor<Model> stringPropertyAccessor = new TextAccessor<Model>() {
             @Nullable
             @Override
             public String getValue(Model model) {
@@ -218,8 +218,8 @@ public class BindingTest extends TestCase {
                 model.stringValue = value;
             }
         };
-        final NumberPropertyAccessor<Model> intProvidesValue = new
-                NumberPropertyAccessor<Model>() {
+        final NumberAccessor<Model> intProvidesValue = new
+                NumberAccessor<Model>() {
                     @Nullable
                     @Override
                     public Number getValue(Model model) {
@@ -231,8 +231,8 @@ public class BindingTest extends TestCase {
                         model.intValue = (Integer) value;
                     }
                 };
-        final DatePropertyAccessor<Model> datePropertyAccessor = new
-                DatePropertyAccessor<Model>() {
+        final DateAccessor<Model> dateAccessor = new
+                DateAccessor<Model>() {
                     @Nullable
                     @Override
                     public Date getValue(Model model) {
@@ -293,7 +293,7 @@ public class BindingTest extends TestCase {
         // Bind properties
         binding.bind(stringProperty, stringPropertyAccessor, stringPropertyFormatter);
         binding.bind(intProperty, intProvidesValue, intPropertyFormatter);
-        binding.bind(false, dateProperty, datePropertyAccessor, datePropertyFormatter);
+        binding.bind(false, dateProperty, dateAccessor, datePropertyFormatter);
 
         // Assign new model
         final Model model = new Model();

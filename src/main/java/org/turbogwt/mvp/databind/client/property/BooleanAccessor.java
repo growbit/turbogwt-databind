@@ -15,12 +15,12 @@
  */
 package org.turbogwt.mvp.databind.client.property;
 
-import org.turbogwt.core.util.shared.ProvidesText;
+import org.turbogwt.core.util.shared.ProvidesBoolean;
 
 /**
  * @param <T> Model type
  *
  * @author Danilo Reinert
  */
-public interface TextPropertyAccessor<T> extends PropertyAccessor<T, String>, ProvidesText<T> {
+public interface BooleanAccessor<T> extends Accessor<T, Boolean>, ProvidesBoolean<T> {
 }

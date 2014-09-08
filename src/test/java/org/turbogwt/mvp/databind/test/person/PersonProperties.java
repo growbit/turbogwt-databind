@@ -20,9 +20,9 @@ import java.util.Date;
 import javax.annotation.Nullable;
 
 import org.turbogwt.mvp.databind.client.format.Formatter;
-import org.turbogwt.mvp.databind.client.property.DatePropertyAccessor;
-import org.turbogwt.mvp.databind.client.property.NumberPropertyAccessor;
-import org.turbogwt.mvp.databind.client.property.TextPropertyAccessor;
+import org.turbogwt.mvp.databind.client.property.DateAccessor;
+import org.turbogwt.mvp.databind.client.property.NumberAccessor;
+import org.turbogwt.mvp.databind.client.property.TextAccessor;
 import org.turbogwt.mvp.databind.client.validation.EmailValidator;
 import org.turbogwt.mvp.databind.client.validation.RequiredValidator;
 import org.turbogwt.mvp.databind.client.validation.Validation;
@@ -38,7 +38,7 @@ public final class PersonProperties {
 
     /* ACCESSORS */
 
-    public static final TextPropertyAccessor<Person> NAME_ACCESSOR = new TextPropertyAccessor<Person>() {
+    public static final TextAccessor<Person> NAME_ACCESSOR = new TextAccessor<Person>() {
         @Override
         public void setValue(Person person, @Nullable String value) {
             person.setName(value);
@@ -51,7 +51,7 @@ public final class PersonProperties {
         }
     };
 
-    public static final DatePropertyAccessor<Person> BIRTHDAY_ACCESSOR = new DatePropertyAccessor<Person>() {
+    public static final DateAccessor<Person> BIRTHDAY_ACCESSOR = new DateAccessor<Person>() {
         @Override
         public void setValue(Person person, @Nullable Date value) {
             person.setBirthday(value);
@@ -64,7 +64,7 @@ public final class PersonProperties {
         }
     };
 
-    public static final NumberPropertyAccessor<Person> PHONE_NUMBER_ACCESSOR = new NumberPropertyAccessor<Person>() {
+    public static final NumberAccessor<Person> PHONE_NUMBER_ACCESSOR = new NumberAccessor<Person>() {
         @Override
         public void setValue(Person person, @Nullable Number value) {
             person.setPhoneNumber((Integer) value);
@@ -77,7 +77,7 @@ public final class PersonProperties {
         }
     };
 
-    public static final TextPropertyAccessor<Person> EMAIL_ACCESSOR = new TextPropertyAccessor<Person>() {
+    public static final TextAccessor<Person> EMAIL_ACCESSOR = new TextAccessor<Person>() {
         @Override
         public void setValue(Person person, @Nullable String value) {
             person.setEmail(value);

@@ -24,5 +24,5 @@ import org.turbogwt.core.util.shared.ProvidesDate;
  *
  * @author Danilo Reinert
  */
-public interface DatePropertyAccessor<T> extends PropertyAccessor<T, Date>, ProvidesDate<T> {
+public interface DateAccessor<T> extends Accessor<T, Date>, ProvidesDate<T> {
 }
