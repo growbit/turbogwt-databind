@@ -20,9 +20,12 @@ import java.util.Date;
 import org.turbogwt.core.util.shared.ProvidesDate;
 
 /**
+ * Accessor for Dates.
+ *
  * @param <T> Model type
  *
  * @author Danilo Reinert
+ * @see Accessor
  */
 public interface DateAccessor<T> extends Accessor<T, Date>, ProvidesDate<T> {
 }

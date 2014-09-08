@@ -20,15 +20,17 @@ import javax.annotation.Nullable;
 import org.turbogwt.core.util.shared.ProvidesValue;
 
 /**
- * This interface is meant to provide access to some property of an object. Simply, it should call the getter and setter
- * of a specific property.
+ * This interface is meant to provide access to some property of an object.
+ * Simply, it should call the getter and setter of a specific property.
  * <p/>
+ *
  * Serves as support for third-party subjects to manage object properties, following the IoC pattern.
  *
  * @param <T> Model type
  * @param <F> Property type
  *
  * @author Danilo Reinert
+ * @see org.turbogwt.core.util.shared.ProvidesValue
  * @see <a href="http://martinfowler.com/bliki/InversionOfControl.html">InversionOfControl</a>
  */
 public interface Accessor<T, F> extends ProvidesValue<T, F> {

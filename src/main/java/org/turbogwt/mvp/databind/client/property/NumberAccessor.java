@@ -18,9 +18,12 @@ package org.turbogwt.mvp.databind.client.property;
 import org.turbogwt.core.util.shared.ProvidesNumber;
 
 /**
+ * Accessor for Numbers.
+ *
  * @param <T> Model type
  *
  * @author Danilo Reinert
+ * @see Accessor
  */
 public interface NumberAccessor<T> extends Accessor<T, Number>, ProvidesNumber<T> {
 }

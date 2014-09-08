@@ -18,9 +18,12 @@ package org.turbogwt.mvp.databind.client.property;
 import org.turbogwt.core.util.shared.ProvidesText;
 
 /**
+ * Accessor for Strings.
+ *
  * @param <T> Model type
  *
  * @author Danilo Reinert
+ * @see Accessor
  */
 public interface TextAccessor<T> extends Accessor<T, String>, ProvidesText<T> {
 }

@@ -18,9 +18,12 @@ package org.turbogwt.mvp.databind.client.property;
 import org.turbogwt.core.util.shared.ProvidesBoolean;
 
 /**
+ * Accessor for Booleans.
+ *
  * @param <T> Model type
  *
  * @author Danilo Reinert
+ * @see Accessor
  */
 public interface BooleanAccessor<T> extends Accessor<T, Boolean>, ProvidesBoolean<T> {
 }
