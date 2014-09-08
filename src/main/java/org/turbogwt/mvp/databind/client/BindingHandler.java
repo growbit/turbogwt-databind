@@ -28,5 +28,5 @@ public interface BindingHandler {
      * @param id    property id
      * @param value new value from view (may need unformatting)
      */
-    void onValueChanged(String id, Object value);
+    void onValueChange(String id, Object value);
 }

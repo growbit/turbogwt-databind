@@ -42,31 +42,31 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
 
     public static class PropertyBinding {
 
-        Accessor propertyAccessor;
+        Accessor accessor;
         Validator validator;
         Formatter formatter;
         boolean autoRefresh;
         // TODO: Add readOnly flag?
         // The readOnly flag would not allow receiving values from View.
 
-        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Validator validator,
+        PropertyBinding(boolean autoRefresh, Accessor accessor, Validator validator,
                         Formatter formatter) {
-            this.propertyAccessor = propertyAccessor;
+            this.accessor = accessor;
             this.validator = validator;
             this.formatter = formatter;
             this.autoRefresh = autoRefresh;
         }
 
-        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor) {
-            this(autoRefresh, propertyAccessor, null, null);
+        PropertyBinding(boolean autoRefresh, Accessor accessor) {
+            this(autoRefresh, accessor, null, null);
         }
 
-        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Formatter formatter) {
-            this(autoRefresh, propertyAccessor, null, formatter);
+        PropertyBinding(boolean autoRefresh, Accessor accessor, Formatter formatter) {
+            this(autoRefresh, accessor, null, formatter);
         }
 
-        PropertyBinding(boolean autoRefresh, Accessor propertyAccessor, Validator validator) {
-            this(autoRefresh, propertyAccessor, validator, null);
+        PropertyBinding(boolean autoRefresh, Accessor accessor, Validator validator) {
+            this(autoRefresh, accessor, validator, null);
         }
     }
 
@@ -114,7 +114,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
                                  Validator<T, F> validator, Formatter<F, ?> formatter) {
         if (properties.containsKey(id)) {
             PropertyBinding propertyBinding = properties.get(id);
-            propertyBinding.propertyAccessor = propertyAccessor;
+            propertyBinding.accessor = propertyAccessor;
             propertyBinding.validator = validator;
             propertyBinding.formatter = formatter;
         } else {
@@ -151,7 +151,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     public Object getRawValue(String id, T data) {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null) {
-            return propertyBinding.propertyAccessor.getValue(data);
+            return propertyBinding.accessor.getValue(data);
         }
         return null;
     }
@@ -160,9 +160,9 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null) {
             if (propertyBinding.formatter != null) {
-                return propertyBinding.formatter.format(propertyBinding.propertyAccessor.getValue(data));
+                return propertyBinding.formatter.format(propertyBinding.accessor.getValue(data));
             }
-            return propertyBinding.propertyAccessor.getValue(data);
+            return propertyBinding.accessor.getValue(data);
         }
         return null;
     }
@@ -170,7 +170,7 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
     public void setRawValue(String id, T data, Object value) {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null) {
-            propertyBinding.propertyAccessor.setValue(data, value);
+            propertyBinding.accessor.setValue(data, value);
         }
     }
 
@@ -178,18 +178,18 @@ public class PresenterEngine<T> implements PropertyBinder<T>, Iterable<String> {
         PropertyBinding propertyBinding = properties.get(id);
         if (propertyBinding != null) {
             if (propertyBinding.formatter != null) {
-                propertyBinding.propertyAccessor.setValue(data, propertyBinding.formatter.unformat(value));
+                propertyBinding.accessor.setValue(data, propertyBinding.formatter.unformat(value));
             } else {
-                propertyBinding.propertyAccessor.setValue(data, value);
+                propertyBinding.accessor.setValue(data, value);
             }
         }
     }
 
-    public Accessor<T, ?> getPropertyAccessor(String id) {
-        return properties.get(id).propertyAccessor;
+    public Accessor<T, ?> getAccessor(String id) {
+        return properties.get(id).accessor;
     }
 
-    public Validator<T, ?> getValidatesValue(String id) {
+    public Validator<T, ?> getValidator(String id) {
         return properties.get(id).validator;
     }
 

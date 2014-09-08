@@ -60,7 +60,7 @@ public interface Binding<T> extends PropertyBinder<T>, BindingHandler, Iterable<
      *
      * @return property accessor
      */
-    <V> Accessor<T, V> getPropertyAccessor(String id);
+    <V> Accessor<T, V> getAccessor(String id);
 
     /**
      * Get validator from specified property.

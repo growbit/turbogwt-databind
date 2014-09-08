@@ -159,8 +159,8 @@ public class BindingImpl<T> implements Binding<T> {
      */
     @Override
     @SuppressWarnings("unchecked")
-    public <V> Accessor<T, V> getPropertyAccessor(String id) {
-        return (Accessor<T, V>) engine.getPropertyAccessor(id);
+    public <V> Accessor<T, V> getAccessor(String id) {
+        return (Accessor<T, V>) engine.getAccessor(id);
     }
 
     /**
@@ -173,7 +173,7 @@ public class BindingImpl<T> implements Binding<T> {
     @Override
     @SuppressWarnings("unchecked")
     public <V> Validator<T, V> getValidator(String id) {
-        return (Validator<T, V>) engine.getValidatesValue(id);
+        return (Validator<T, V>) engine.getValidator(id);
     }
 
     /**
@@ -236,14 +236,14 @@ public class BindingImpl<T> implements Binding<T> {
     /**
      * Must be called by View when some bound widget changes value.
      * <p/>
-     * Presenter must implement #DatabindUiHandlers and delegate the execution of #DatabindUiHandlers.onValueChanged to
+     * Presenter must implement #DatabindUiHandlers and delegate the execution of #DatabindUiHandlers.onValueChange to
      * this method.
      *
      * @param id    property id
      * @param value new value from view (may need unformatting)
      */
     @Override
-    public void onValueChanged(String id, Object value) {
+    public void onValueChange(String id, Object value) {
         try {
             setValueToModel(id, value);
         } catch (ClassCastException e) {

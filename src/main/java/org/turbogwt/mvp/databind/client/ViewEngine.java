@@ -30,14 +30,15 @@ import org.turbogwt.core.util.shared.Registration;
 /**
  * It is responsible for managing the binding on the View side.
  * <p/>
+ *
  * This class should be used by any {@link BindingView} as a delegatee.
  * <p/>
+ *
  * You can even create an abstract view implementing {@link BindingView} and delegating the properly methods to this
  * engine. Then all your views supporting databinding could extend from this one.
  *
- * @see BindingViewImpl
- *
  * @author Danilo Reinert
+ * @see BindingViewImpl
  */
 @SuppressWarnings("unchecked")
 public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHandler {
@@ -150,7 +151,7 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
     private <F> void fireValueChangedEvent(String id, HasValue<F> widget) {
         // Avoid NPE. The null uiHandler should be notified before reaching here.
         if (uiHandler != null) {
-            uiHandler.onValueChanged(id, widget.getValue());
+            uiHandler.onValueChange(id, widget.getValue());
         }
     }
 }
