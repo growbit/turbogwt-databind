@@ -13,16 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.turbogwt.mvp.databind.client;
+package org.turbogwt.mvp.shared;
 
-/**
- * Represents a class that holds a handler of binding.
- *
- * @author Danilo Reinert
- */
-public interface HasBindingHandler {
-
-    BindingHandler getBindingHandler();
-
-    void setBindingHandler(BindingHandler handler);
+public interface ViewHandler {
 }

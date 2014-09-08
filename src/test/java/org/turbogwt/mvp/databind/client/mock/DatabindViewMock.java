@@ -56,6 +56,11 @@ public class DatabindViewMock implements BindingView {
     }
 
     @Override
+    public BindingHandler getBindingHandler() {
+        return engine.getBindingHandler();
+    }
+
+    @Override
     public void setBindingHandler(BindingHandler uiHandlers) {
         engine.setBindingHandler(uiHandlers);
     }

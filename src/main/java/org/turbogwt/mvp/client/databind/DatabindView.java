@@ -13,16 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.turbogwt.mvp.databind.client;
+package org.turbogwt.mvp.client.databind;
 
-/**
- * Represents a class that holds a handler of binding.
- *
- * @author Danilo Reinert
- */
-public interface HasBindingHandler {
+import org.turbogwt.mvp.client.GwtView;
+import org.turbogwt.mvp.databind.client.BindingView;
 
-    BindingHandler getBindingHandler();
-
-    void setBindingHandler(BindingHandler handler);
+public interface DatabindView<H extends DatabindViewHandler> extends GwtView<H>, BindingView {
 }

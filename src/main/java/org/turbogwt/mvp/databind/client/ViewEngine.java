@@ -38,7 +38,7 @@ import org.turbogwt.core.util.shared.Registration;
  * engine. Then all your views supporting databinding could extend from this one.
  *
  * @author Danilo Reinert
- * @see AbstractBindingView
+ * @see BindingViewImpl
  */
 @SuppressWarnings("unchecked")
 public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHandler {
@@ -86,6 +86,11 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
                 ((TakesValue<F>) hasValue).setValue(value);
             }
         }
+    }
+
+    @Override
+    public BindingHandler getBindingHandler() {
+        return handler;
     }
 
     @Override

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.gwt.activity.Activity"/>
+
+    <inherits name="org.turbogwt.core.Core"/>
+    <inherits name="org.turbogwt.mvp.databind.Databind"/>
+
+    <source path="client" excludes="**/*Test.java,**/*TestCase.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
+    <source path="shared" excludes="**/*Test.java,**/*TestCase.java,**/*TestSuite.java,**/*TestUtil.java,**/*Mock.java,**/*Stub.java"/>
+</module>

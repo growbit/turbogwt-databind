@@ -13,16 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.turbogwt.mvp.databind.client;
+package org.turbogwt.mvp.shared;
 
-/**
- * Represents a class that holds a handler of binding.
- *
- * @author Danilo Reinert
- */
-public interface HasBindingHandler {
+public class ViewNotBoundException extends RuntimeException {
 
-    BindingHandler getBindingHandler();
+    public ViewNotBoundException() {
+    }
 
-    void setBindingHandler(BindingHandler handler);
+    public ViewNotBoundException(String s) {
+        super(s);
+    }
+
+    public ViewNotBoundException(String s, Throwable throwable) {
+        super(s, throwable);
+    }
 }

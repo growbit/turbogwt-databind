@@ -13,16 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.turbogwt.mvp.databind.client;
+package org.turbogwt.mvp.client;
 
-/**
- * Represents a class that holds a handler of binding.
- *
- * @author Danilo Reinert
- */
-public interface HasBindingHandler {
+import com.google.gwt.user.client.ui.Composite;
 
-    BindingHandler getBindingHandler();
+import org.turbogwt.mvp.shared.ViewHandler;
+import org.turbogwt.mvp.shared.ViewNotBoundException;
 
-    void setBindingHandler(BindingHandler handler);
+public abstract class AbstractView<H extends ViewHandler> extends Composite implements GwtView<H> {
+
+    private H handler;
+
+    @Override
+    public void setHandler(H handler) {
+        this.handler = handler;
+    }
+
+    @Override
+    public H getHandler() {
+        if (handler == null)
+            throw new ViewNotBoundException("There's no Presenter bound to this View.");
+        return handler;
+    }
 }

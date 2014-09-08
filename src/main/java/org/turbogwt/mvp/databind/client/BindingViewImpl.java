@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.turbogwt.mvp.databind.client;
 
 import com.google.gwt.user.client.TakesValue;
@@ -34,7 +33,7 @@ import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
  *
  * @author Danilo Reinert
  */
-public abstract class AbstractBindingView extends Composite implements BindingView {
+public abstract class BindingViewImpl extends Composite implements BindingView {
 
     private final ViewEngine engine = new ViewEngine();
 
@@ -66,6 +65,11 @@ public abstract class AbstractBindingView extends Composite implements BindingVi
     @Override
     public <F> void setValue(String id, F value) {
         engine.setValue(id, value);
+    }
+
+    @Override
+    public BindingHandler getBindingHandler() {
+        return engine.getBindingHandler();
     }
 
     @Override
