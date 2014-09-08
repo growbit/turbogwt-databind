@@ -18,6 +18,7 @@ package org.turbogwt.mvp.databind.client;
 /**
  * Interface that must be implemented by the View to support databind.
  * <p/>
+ *
  * Usually you will delegate all possible executions to {@link ViewEngine}.
  *
  * @author Danilo Reinert

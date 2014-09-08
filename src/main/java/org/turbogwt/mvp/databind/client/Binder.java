@@ -18,6 +18,7 @@ package org.turbogwt.mvp.databind.client;
 /**
  * It defines an object that supports binding.
  * <p/>
+ *
  * The underlying implementation should provide methods for binding instances to ids and must support an #unbind method
  * that cancels the binding of some id.
  *

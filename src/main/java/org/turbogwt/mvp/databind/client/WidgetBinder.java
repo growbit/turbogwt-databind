@@ -28,8 +28,8 @@ import org.turbogwt.core.util.shared.Registration;
 public interface WidgetBinder extends Binder {
 
     /**
-     * Bind a widget to a property id. Every time an event related to the selected strategy occurs, the updated value is
-     * sent to the uiHandlers (Presenter)
+     * Bind a widget to a property id.
+     * Every time the event related to the strategy occurs, the updated value is sent to the Handler (Presenter).
      *
      * @param id       identification of property
      * @param widget   widget to bind

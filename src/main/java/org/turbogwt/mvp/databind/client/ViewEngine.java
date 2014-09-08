@@ -38,7 +38,7 @@ import org.turbogwt.core.util.shared.Registration;
  * engine. Then all your views supporting databinding could extend from this one.
  *
  * @author Danilo Reinert
- * @see BindingViewImpl
+ * @see AbstractBindingView
  */
 @SuppressWarnings("unchecked")
 public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHandler {
@@ -63,7 +63,7 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
     }
 
     private final Map<String, WidgetBinding> bindings = GWT.create(WidgetBindingMap.class);
-    private BindingHandler uiHandler;
+    private BindingHandler handler;
 
     @Override
     public <F> F getValue(String id) {
@@ -90,7 +90,7 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
 
     @Override
     public void setBindingHandler(BindingHandler uiHandler) {
-        this.uiHandler = uiHandler;
+        this.handler = uiHandler;
     }
 
     @Override
@@ -101,7 +101,7 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
         HandlerRegistration handlerRegistration = strategy.bind((IsWidget) widget, new Command() {
             @Override
             public void execute() {
-                fireValueChangedEvent(id, widget);
+                fireValueChangeEvent(id, widget);
             }
         });
 
@@ -148,10 +148,10 @@ public class ViewEngine implements WidgetBinder, HasBindingValues, HasBindingHan
         return false;
     }
 
-    private <F> void fireValueChangedEvent(String id, HasValue<F> widget) {
-        // Avoid NPE. The null uiHandler should be notified before reaching here.
-        if (uiHandler != null) {
-            uiHandler.onValueChange(id, widget.getValue());
+    private <F> void fireValueChangeEvent(String id, HasValue<F> widget) {
+        // Avoid NPE. The null handler should be notified before reaching here.
+        if (handler != null) {
+            handler.onValueChange(id, widget.getValue());
         }
     }
 }

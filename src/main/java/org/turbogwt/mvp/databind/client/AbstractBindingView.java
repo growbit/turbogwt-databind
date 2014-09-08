@@ -29,11 +29,12 @@ import org.turbogwt.mvp.databind.client.validation.ValidationMessage;
  * {@link BindingView} default implementation.
  * It is simply a {@link com.google.gwt.user.client.ui.Composite} supporting databind.
  * <p/>
+ *
  * You may extend it to build your views.
  *
  * @author Danilo Reinert
  */
-public abstract class BindingViewImpl extends Composite implements BindingView {
+public abstract class AbstractBindingView extends Composite implements BindingView {
 
     private final ViewEngine engine = new ViewEngine();
 
@@ -68,8 +69,8 @@ public abstract class BindingViewImpl extends Composite implements BindingView {
     }
 
     @Override
-    public void setBindingHandler(BindingHandler uiHandlers) {
-        engine.setBindingHandler(uiHandlers);
+    public void setBindingHandler(BindingHandler handler) {
+        engine.setBindingHandler(handler);
     }
 
     @Override

@@ -48,12 +48,12 @@ public class BindingImpl<T> implements Binding<T> {
     }
 
     @SuppressWarnings("unchecked")
-    public BindingImpl(BindingView view, BindingHandler uiHandlers) {
+    public BindingImpl(BindingView view, BindingHandler handler) {
         if (view == null) {
             throw new NullPointerException("The parameter _view_ cannot be null");
         }
         this.view = view;
-        this.view.setBindingHandler(uiHandlers);
+        this.view.setBindingHandler(handler);
     }
 
     @Override
